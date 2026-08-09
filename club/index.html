@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEENASTIC — Club Étudiant ENASTIC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="brand">
+      <span class="brand-logo">CE</span>
+      <span class="brand-name">ENASTIC</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+      <li><a href="#evenements" class="nav-link">Événements</a></li>
+      <li><a href="#ressources" class="nav-link">Ressources</a></li>
+      <li><a href="#forum" class="nav-link">Forum</a></li>
+      <li><a href="#stages" class="nav-link">Stages & Emplois</a></li>
+      <li><a href="#galerie" class="nav-link">Galerie</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-ghost" id="loginBtn">Connexion</button>
+      <button class="btn-primary" id="signupBtn">S'inscrire</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section id="accueil" class="hero">
+  <div class="hero-bg">
+    <div class="hero-circle c1"></div>
+    <div class="hero-circle c2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Club Étudiant · ENASTIC · N'Djaména</span>
+    <h1 class="hero-title">Apprendre, Créer,<br><em>Évoluer ensemble.</em></h1>
+    <p class="hero-desc">CEENASTIC est l'espace numérique officiel des étudiants de l'ENASTIC — cours partagés, événements, projets collaboratifs et bien plus.</p>
+    <div class="hero-cta">
+      <button class="btn-primary btn-lg" id="heroJoin">Rejoindre le club</button>
+      <button class="btn-outline btn-lg" id="heroDiscover">Découvrir →</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" data-target="340">0</span><span class="stat-label">Membres actifs</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="120">0</span><span class="stat-label">Ressources partagées</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="28">0</span><span class="stat-label">Événements organisés</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ ACTUALITÉS ═══════════════════════════ -->
+<section class="section" id="actualites">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Actualités</span>
+      <h2>Dernières nouvelles du club</h2>
+    </div>
+    <div class="news-grid" id="newsGrid">
+      <article class="news-card featured">
+        <div class="news-badge">À la une</div>
+        <div class="news-meta"><span class="news-cat">Événement</span><span class="news-date">10 Juin 2026</span></div>
+        <h3>Hackathon ENASTIC 2026 — Inscriptions ouvertes</h3>
+        <p>48h de programmation intensive pour résoudre des problèmes réels du Tchad. Équipes de 3 à 5 membres. Prix à gagner !</p>
+        <a href="#" class="news-link">Lire la suite →</a>
+      </article>
+      <article class="news-card">
+        <div class="news-meta"><span class="news-cat">Ressources</span><span class="news-date">8 Juin 2026</span></div>
+        <h3>Nouveaux cours de Réseaux & Télécom disponibles</h3>
+        <p>10 nouveaux documents de cours uploadés par vos camarades de 3ème année.</p>
+        <a href="#" class="news-link">Lire la suite →</a>
+      </article>
+      <article class="news-card">
+        <div class="news-meta"><span class="news-cat">Opportunité</span><span class="news-date">5 Juin 2026</span></div>
+        <h3>Stage chez Tigo Tchad — Candidatures acceptées</h3>
+        <p>3 postes de stagiaires en développement logiciel pour les étudiants en L3 et Master.</p>
+        <a href="#" class="news-link">Lire la suite →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FONCTIONNALITÉS ═══════════════════════════ -->
+<section class="section section-features" id="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Fonctionnalités</span>
+      <h2>Tout ce dont tu as besoin</h2>
+      <p class="section-desc">Une plateforme construite par et pour les étudiants de l'ENASTIC.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📚</div>
+        <h3>Cours & Ressources</h3>
+        <p>Partage et télécharge des PDF, notes de cours, exercices corrigés par filière et année.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🗓️</div>
+        <h3>Calendrier & Emploi du temps</h3>
+        <p>Consulte et synchronise l'emploi du temps, les examens et les deadlines importantes.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3>Forum de discussion</h3>
+        <p>Pose tes questions, échange avec tes camarades par matière ou par promotion.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Événements & Activités</h3>
+        <p>Découvre et inscris-toi aux conférences, ateliers, hackathons et sorties du club.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💼</div>
+        <h3>Stages & Emplois</h3>
+        <p>Accède aux offres de stages, alternances et emplois réservées aux membres CEENASTIC.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🤝</div>
+        <h3>Projets Collaboratifs</h3>
+        <p>Rejoins ou propose un projet, forme ton équipe, et construis quelque chose de concret.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ ÉVÉNEMENTS ═══════════════════════════ -->
+<section class="section" id="evenements">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Agenda</span>
+      <h2>Événements à venir</h2>
+    </div>
+    <div class="events-list" id="eventsList">
+      <div class="event-item">
+        <div class="event-date-box"><span class="eday">15</span><span class="emonth">JUN</span></div>
+        <div class="event-info">
+          <span class="event-tag">Hackathon</span>
+          <h3>Hackathon ENASTIC 2026</h3>
+          <p>Campus ENASTIC · 08h00 — 48h non-stop</p>
+        </div>
+        <button class="btn-primary btn-sm event-register-btn" data-event="Hackathon ENASTIC 2026">S'inscrire</button>
+      </div>
+      <div class="event-item">
+        <div class="event-date-box"><span class="eday">20</span><span class="emonth">JUN</span></div>
+        <div class="event-info">
+          <span class="event-tag">Conférence</span>
+          <h3>Cybersécurité & IA en Afrique</h3>
+          <p>Amphithéâtre principal · 14h00 – 17h00</p>
+        </div>
+        <button class="btn-outline btn-sm event-register-btn" data-event="Cybersécurité & IA en Afrique">Réserver</button>
+      </div>
+      <div class="event-item">
+        <div class="event-date-box"><span class="eday">28</span><span class="emonth">JUN</span></div>
+        <div class="event-info">
+          <span class="event-tag">Atelier</span>
+          <h3>Workshop : Développement Web avec React</h3>
+          <p>Salle Informatique B · 09h00 – 12h00</p>
+        </div>
+        <button class="btn-outline btn-sm event-register-btn" data-event="Workshop React">Réserver</button>
+      </div>
+      <div class="event-item">
+        <div class="event-date-box"><span class="eday">05</span><span class="emonth">JUL</span></div>
+        <div class="event-info">
+          <span class="event-tag">Réseautage</span>
+          <h3>Soirée Alumni & Étudiants ENASTIC</h3>
+          <p>Campus ENASTIC · 18h00 – 22h00</p>
+        </div>
+        <button class="btn-outline btn-sm event-register-btn" data-event="Soirée Alumni">Réserver</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ RESSOURCES ═══════════════════════════ -->
+<section class="section section-alt" id="ressources">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Bibliothèque</span>
+      <h2>Ressources pédagogiques</h2>
+      <p class="section-desc">Filtre par filière, année ou matière. Partage tes propres cours.</p>
+    </div>
+    <div class="resources-filters">
+      <button class="filter-btn active" data-filter="all">Tout</button>
+      <button class="filter-btn" data-filter="l1">Licence 1</button>
+      <button class="filter-btn" data-filter="l2">Licence 2</button>
+      <button class="filter-btn" data-filter="l3">Licence 3</button>
+      <button class="filter-btn" data-filter="master">Master</button>
+    </div>
+    <div class="resources-grid" id="resourcesGrid">
+      <div class="resource-card" data-year="l1">
+        <div class="resource-icon">📄</div>
+        <div class="resource-info">
+          <span class="resource-year">L1</span>
+          <h4>Algèbre & Analyse — Cours complet</h4>
+          <span class="resource-meta">PDF · 2.4 MB · Partagé par Moussa D.</span>
+        </div>
+        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
+      </div>
+      <div class="resource-card" data-year="l2">
+        <div class="resource-icon">📄</div>
+        <div class="resource-info">
+          <span class="resource-year">L2</span>
+          <h4>Réseaux Informatiques — Résumé + Exercices</h4>
+          <span class="resource-meta">PDF · 1.8 MB · Partagé par Aïcha K.</span>
+        </div>
+        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
+      </div>
+      <div class="resource-card" data-year="l3">
+        <div class="resource-icon">📄</div>
+        <div class="resource-info">
+          <span class="resource-year">L3</span>
+          <h4>Architecture des Systèmes Distribués</h4>
+          <span class="resource-meta">PDF · 3.1 MB · Partagé par Ibrahim S.</span>
+        </div>
+        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
+      </div>
+      <div class="resource-card" data-year="l1">
+        <div class="resource-icon">📄</div>
+        <div class="resource-info">
+          <span class="resource-year">L1</span>
+          <h4>Introduction à la Programmation (C)</h4>
+          <span class="resource-meta">PDF · 1.2 MB · Partagé par Fatima H.</span>
+        </div>
+        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
+      </div>
+      <div class="resource-card" data-year="master">
+        <div class="resource-icon">📄</div>
+        <div class="resource-info">
+          <span class="resource-year">Master</span>
+          <h4>Intelligence Artificielle — Deep Learning</h4>
+          <span class="resource-meta">PDF · 4.7 MB · Partagé par Saleh M.</span>
+        </div>
+        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
+      </div>
+      <div class="resource-card" data-year="l2">
+        <div class="resource-icon">📄</div>
+        <div class="resource-info">
+          <span class="resource-year">L2</span>
+          <h4>Bases de données relationnelles — TD corrigés</h4>
+          <span class="resource-meta">PDF · 0.9 MB · Partagé par Hawa T.</span>
+        </div>
+        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
+      </div>
+    </div>
+    <div class="resources-upload">
+      <button class="btn-primary" id="uploadBtn">+ Partager un cours</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FORUM ═══════════════════════════ -->
+<section class="section" id="forum">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Communauté</span>
+      <h2>Forum des étudiants</h2>
+      <p class="section-desc">Pose tes questions, partage tes astuces, aide tes camarades.</p>
+    </div>
+    <div class="forum-categories">
+      <div class="forum-cat">
+        <div class="forum-cat-icon">💡</div>
+        <div class="forum-cat-info">
+          <h4>Aide aux cours</h4>
+          <p>Postes des questions sur les matières</p>
+          <span class="forum-count">42 discussions</span>
+        </div>
+        <span class="forum-arrow">→</span>
+      </div>
+      <div class="forum-cat">
+        <div class="forum-cat-icon">🖥️</div>
+        <div class="forum-cat-info">
+          <h4>Projets & Code</h4>
+          <p>Partage de code, revue de projets</p>
+          <span class="forum-count">28 discussions</span>
+        </div>
+        <span class="forum-arrow">→</span>
+      </div>
+      <div class="forum-cat">
+        <div class="forum-cat-icon">🎓</div>
+        <div class="forum-cat-info">
+          <h4>Vie étudiante</h4>
+          <p>Logement, bons plans, annonces</p>
+          <span class="forum-count">61 discussions</span>
+        </div>
+        <span class="forum-arrow">→</span>
+      </div>
+      <div class="forum-cat">
+        <div class="forum-cat-icon">🌍</div>
+        <div class="forum-cat-info">
+          <h4>Opportunités</h4>
+          <p>Bourses, concours, call for papers</p>
+          <span class="forum-count">17 discussions</span>
+        </div>
+        <span class="forum-arrow">→</span>
+      </div>
+    </div>
+    <div class="forum-recent">
+      <h3 class="forum-recent-title">Derniers sujets</h3>
+      <div class="forum-thread">
+        <div class="thread-avatar">M</div>
+        <div class="thread-content">
+          <h5>Comment préparer l'examen de Réseaux L2 ?</h5>
+          <span class="thread-meta">Moussa · il y a 2h · 8 réponses</span>
+        </div>
+        <span class="thread-badge hot">🔥 Actif</span>
+      </div>
+      <div class="forum-thread">
+        <div class="thread-avatar">A</div>
+        <div class="thread-content">
+          <h5>Recherche coéquipiers pour le Hackathon 2026</h5>
+          <span class="thread-meta">Aïcha · il y a 5h · 12 réponses</span>
+        </div>
+        <span class="thread-badge">Nouveau</span>
+      </div>
+      <div class="forum-thread">
+        <div class="thread-avatar">I</div>
+        <div class="thread-content">
+          <h5>Partage — Mon stage chez Airtel Tchad (retour d'expérience)</h5>
+          <span class="thread-meta">Ibrahim · il y a 1j · 23 réponses</span>
+        </div>
+        <span class="thread-badge hot">🔥 Actif</span>
+      </div>
+    </div>
+    <div class="text-center mt-32">
+      <button class="btn-outline" id="forumBtn">Accéder au forum complet →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ STAGES ═══════════════════════════ -->
+<section class="section section-alt" id="stages">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Carrière</span>
+      <h2>Stages & Emplois</h2>
+      <p class="section-desc">Offres exclusives réservées aux membres CEENASTIC.</p>
+    </div>
+    <div class="jobs-grid">
+      <div class="job-card">
+        <div class="job-header">
+          <div class="job-logo">T</div>
+          <div>
+            <h4>Développeur Web Stagiaire</h4>
+            <span class="job-company">Tigo Tchad</span>
+          </div>
+          <span class="job-type internship">Stage</span>
+        </div>
+        <p class="job-desc">Développement d'applications web pour la gestion interne. Stack : React, Node.js, PostgreSQL.</p>
+        <div class="job-footer">
+          <span class="job-location">📍 N'Djaména</span>
+          <span class="job-duration">⏱ 3 mois</span>
+          <button class="btn-primary btn-sm">Postuler</button>
+        </div>
+      </div>
+      <div class="job-card">
+        <div class="job-header">
+          <div class="job-logo">A</div>
+          <div>
+            <h4>Technicien Réseaux</h4>
+            <span class="job-company">Airtel Tchad</span>
+          </div>
+          <span class="job-type internship">Stage</span>
+        </div>
+        <p class="job-desc">Maintenance et supervision du réseau mobile. Formation assurée sur les équipements Ericsson.</p>
+        <div class="job-footer">
+          <span class="job-location">📍 N'Djaména</span>
+          <span class="job-duration">⏱ 6 mois</span>
+          <button class="btn-primary btn-sm">Postuler</button>
+        </div>
+      </div>
+      <div class="job-card">
+        <div class="job-header">
+          <div class="job-logo">M</div>
+          <div>
+            <h4>Analyste Data Junior</h4>
+            <span class="job-company">Ministère du Numérique</span>
+          </div>
+          <span class="job-type job">Emploi</span>
+        </div>
+        <p class="job-desc">Analyse de données pour des projets d'e-gouvernance. Python, SQL et Power BI requis.</p>
+        <div class="job-footer">
+          <span class="job-location">📍 N'Djaména</span>
+          <span class="job-duration">⏱ CDI</span>
+          <button class="btn-primary btn-sm">Postuler</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ GALERIE ═══════════════════════════ -->
+<section class="section" id="galerie">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Mémoires</span>
+      <h2>Galerie du club</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item g-large"><div class="gallery-label">Hackathon 2025</div></div>
+      <div class="gallery-item"><div class="gallery-label">Conférence IA</div></div>
+      <div class="gallery-item"><div class="gallery-label">Atelier Web</div></div>
+      <div class="gallery-item"><div class="gallery-label">Remise des prix</div></div>
+      <div class="gallery-item g-wide"><div class="gallery-label">Soirée Alumni 2025</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ À PROPOS ═══════════════════════════ -->
+<section class="section section-alt" id="apropos">
+  <div class="container about-layout">
+    <div class="about-text">
+      <span class="section-tag">À propos</span>
+      <h2>Qui sommes-nous ?</h2>
+      <p>Le <strong>CEENASTIC</strong> (Club Étudiant de l'ENASTIC) est l'association officielle des étudiants de l'École Nationale Supérieure des Arts et Sciences des Technologies de l'Information et de la Communication du Tchad.</p>
+      <p>Fondé pour favoriser l'entraide académique, le développement professionnel et l'épanouissement personnel, le club organise des événements, facilite le partage de connaissances et connecte les étudiants aux opportunités du secteur numérique en Afrique.</p>
+      <div class="about-team">
+        <h3>Bureau exécutif 2025–2026</h3>
+        <div class="team-grid">
+          <div class="team-member"><div class="member-avatar">P</div><span class="member-name">Président</span></div>
+          <div class="team-member"><div class="member-avatar">S</div><span class="member-name">Secrétaire</span></div>
+          <div class="team-member"><div class="member-avatar">T</div><span class="member-name">Trésorier</span></div>
+          <div class="team-member"><div class="member-avatar">R</div><span class="member-name">Resp. Comm.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-visual">
+      <div class="about-card-big">
+        <div class="about-big-num">2021</div>
+        <div class="about-big-label">Année de fondation</div>
+      </div>
+      <div class="about-cards-row">
+        <div class="about-mini-card"><span>🏫</span> ENASTIC, N'Djaména</div>
+        <div class="about-mini-card"><span>📡</span> Numérique & Tech</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ NEWSLETTER ═══════════════════════════ -->
+<section class="section section-newsletter">
+  <div class="container">
+    <div class="newsletter-box">
+      <h2>Reste informé(e)</h2>
+      <p>Reçois les actualités du club, les nouvelles offres et les rappels d'événements directement dans ta boîte mail.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="ton.email@enastic.td" />
+        <button class="btn-primary" id="newsletterBtn">S'abonner</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="brand"><span class="brand-logo">CE</span><span class="brand-name">ENASTIC</span></a>
+      <p>Le club officiel des étudiants de l'ENASTIC.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#evenements">Événements</a></li>
+        <li><a href="#ressources">Ressources</a></li>
+        <li><a href="#forum">Forum</a></li>
+        <li><a href="#stages">Stages & Emplois</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Club</h4>
+      <ul>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Règlement intérieur</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Réseaux sociaux</h4>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61571312086629" target="_blank" class="social-btn facebook">Facebook</a>
+        <a href="#" class="social-btn">LinkedIn</a>
+        <a href="#" class="social-btn">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CEENASTIC — Club Étudiant ENASTIC · N'Djaména, Tchad</p>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════ MODALS ═══════════════════════════ -->
+<!-- Auth Modal -->
+<div class="modal-overlay" id="authModal">
+  <div class="modal">
+    <button class="modal-close" id="closeAuth">✕</button>
+    <div class="modal-tabs">
+      <button class="modal-tab active" data-tab="login">Connexion</button>
+      <button class="modal-tab" data-tab="signup">Inscription</button>
+    </div>
+    <!-- Login Form -->
+    <div class="modal-form" id="loginForm">
+      <h2>Bon retour 👋</h2>
+      <p class="modal-sub">Connecte-toi à ton espace étudiant</p>
+      <div class="form-group">
+        <label>Email ENASTIC</label>
+        <input type="email" placeholder="prenom.nom@enastic.td" />
+      </div>
+      <div class="form-group">
+        <label>Mot de passe</label>
+        <input type="password" placeholder="••••••••" />
+      </div>
+      <button class="btn-primary btn-full" id="doLogin">Se connecter</button>
+      <p class="form-switch">Pas encore membre ? <a href="#" class="switch-tab" data-target="signup">S'inscrire →</a></p>
+    </div>
+    <!-- Signup Form -->
+    <div class="modal-form hidden" id="signupForm">
+      <h2>Rejoins CEENASTIC 🎓</h2>
+      <p class="modal-sub">Crée ton espace étudiant gratuit</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Prénom</label>
+          <input type="text" placeholder="Prénom" />
+        </div>
+        <div class="form-group">
+          <label>Nom</label>
+          <input type="text" placeholder="Nom" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email institutionnel</label>
+        <input type="email" placeholder="prenom.nom@enastic.td" />
+      </div>
+      <div class="form-group">
+        <label>Filière</label>
+        <select>
+          <option value="">Sélectionne ta filière</option>
+          <option>Génie Logiciel</option>
+          <option>Réseaux & Télécommunications</option>
+          <option>Systèmes Embarqués</option>
+          <option>Sécurité Informatique</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Année d'étude</label>
+        <select>
+          <option value="">Sélectionne ton année</option>
+          <option>Licence 1</option>
+          <option>Licence 2</option>
+          <option>Licence 3</option>
+          <option>Master 1</option>
+          <option>Master 2</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Mot de passe</label>
+        <input type="password" placeholder="8 caractères minimum" />
+      </div>
+      <button class="btn-primary btn-full" id="doSignup">Créer mon compte</button>
+      <p class="form-switch">Déjà membre ? <a href="#" class="switch-tab" data-target="login">Se connecter →</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
