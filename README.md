@@ -44,9 +44,12 @@ Les points à faire évoluer sont marqués `[À COMPLÉTER]` dans `index.html` :
    pourcentage affiché juste au-dessus.
 4. **Titres animés du bandeau** — tableau `ROLES` en haut de `portfolio.js`.
 5. **Email du formulaire** — constante `CONTACT_EMAIL` en haut de `portfolio.js`.
-6. **LinkedIn** — aucun lien n'est en ligne pour l'instant ; l'ajouter dans le bandeau d'accueil,
-   la section contact et le pied de page.
+6. **Liens sociaux** — WhatsApp, LinkedIn, Facebook et GitHub apparaissent à trois endroits :
+   bandeau d'accueil, section contact et pied de page.
 7. **CV** — remplacer `cv.pdf` par la version à jour, en gardant le même nom de fichier.
+8. **Polices** — Space Grotesk (titres), Plus Jakarta Sans (texte) et JetBrains Mono (terminal),
+   chargées depuis Google Fonts. Pour en changer : modifier le `<link>` dans `index.html` et les
+   variables `--font-display` / `--font-body` en haut de `portfolio.css`.
 
 ## Aperçu en local
 

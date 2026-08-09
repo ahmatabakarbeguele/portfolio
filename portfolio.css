@@ -32,8 +32,8 @@
   --shadow-md: 0 4px 16px rgba(0,0,0,.08);
   --shadow-lg: 0 12px 40px rgba(0,0,0,.12);
 
-  --font-display: 'Syne', sans-serif;
-  --font-body:    'Inter', sans-serif;
+  --font-display: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --font-body:    'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
   --font-mono:    'JetBrains Mono', ui-monospace, monospace;
 }
 
@@ -106,9 +106,9 @@ img { display: block; max-width: 100%; }
   width: 38px; height: 38px;
   background: var(--blue-900); color: var(--white);
   border-radius: 10px; display: grid; place-items: center;
-  font-family: var(--font-display); font-size: 14px; font-weight: 800; letter-spacing: .5px;
+  font-family: var(--font-display); font-size: 14px; font-weight: 700; letter-spacing: .5px;
 }
-.brand-name { font-family: var(--font-display); font-size: 18px; font-weight: 800; color: var(--blue-900); letter-spacing: .3px; }
+.brand-name { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--blue-900); letter-spacing: .3px; }
 .brand-dot { color: var(--cyan); }
 
 .nav-links { display: flex; gap: 4px; }
@@ -165,7 +165,7 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-title {
-  font-family: var(--font-display); font-weight: 800;
+  font-family: var(--font-display); font-weight: 700;
   font-size: clamp(44px, 6.4vw, 76px); line-height: 1.02; letter-spacing: -1.5px;
   margin-bottom: 16px;
 }
@@ -239,8 +239,8 @@ img { display: block; max-width: 100%; }
   border-top: 1px solid rgba(255,255,255,.12);
 }
 .stat { display: flex; flex-direction: column; align-items: center; flex: 1; position: relative; }
-.stat-num { font-family: var(--font-display); font-size: 34px; font-weight: 800; color: var(--white); line-height: 1; }
-.stat-suffix { position: absolute; top: 0; right: calc(50% - 34px); font-family: var(--font-display); font-size: 20px; font-weight: 800; color: var(--cyan); }
+.stat-num { font-family: var(--font-display); font-size: 34px; font-weight: 700; color: var(--white); line-height: 1; }
+.stat-suffix { position: absolute; top: 0; right: calc(50% - 34px); font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--cyan); }
 .stat-label { font-size: 13px; color: #94a3b8; margin-top: 8px; }
 .stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,.14); }
 
@@ -255,7 +255,7 @@ img { display: block; max-width: 100%; }
 }
 .section-tag.light { background: rgba(255,255,255,.12); color: #bfdbfe; }
 .section-header h2, .about-text h2, .contact-info h2 {
-  font-family: var(--font-display); font-weight: 800;
+  font-family: var(--font-display); font-weight: 700;
   font-size: clamp(28px, 3.6vw, 40px); line-height: 1.15; letter-spacing: -.8px; color: var(--blue-900);
 }
 .section-desc { margin-top: 14px; color: var(--gray-600); font-size: 16px; }
@@ -338,7 +338,7 @@ img { display: block; max-width: 100%; }
 .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--blue-100); }
 .service-card:hover::before { transform: scaleY(1); }
 .service-num {
-  font-family: var(--font-display); font-size: 13px; font-weight: 800;
+  font-family: var(--font-display); font-size: 13px; font-weight: 700;
   color: var(--blue-400); letter-spacing: 1px; display: block; margin-bottom: 10px;
 }
 .service-card h3 { font-family: var(--font-display); font-size: 20px; color: var(--blue-900); margin-bottom: 9px; }
@@ -407,7 +407,7 @@ img { display: block; max-width: 100%; }
 .cert-logo {
   width: 46px; height: 46px; flex-shrink: 0; display: grid; place-items: center;
   background: var(--blue-900); color: var(--white); border-radius: 12px;
-  font-family: var(--font-display); font-size: 15px; font-weight: 800;
+  font-family: var(--font-display); font-size: 15px; font-weight: 700;
 }
 .cert-card h4 { font-size: 15.5px; color: var(--blue-900); }
 .cert-org { font-size: 13px; color: var(--gray-400); }
