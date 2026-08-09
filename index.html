@@ -3,33 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CEENASTIC — Club Étudiant ENASTIC</title>
+  <title>Ahmat Abakar — Administration Sécurité Réseaux & Systèmes</title>
+  <meta name="description" content="Portfolio d'Ahmat Abakar, étudiant à l'ENASTIC (N'Djaména) spécialisé en administration, sécurité des réseaux et des systèmes informatiques." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="portfolio.css" />
 </head>
 <body>
+
+<!--
+  ✏️  PERSONNALISATION RAPIDE
+  Cherche les blocs marqués « [À PERSONNALISER] » pour remplacer :
+  nom complet, téléphone, liens sociaux, projets, expériences et certifications.
+-->
 
 <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
 <nav id="navbar">
   <div class="nav-inner">
-    <a href="#" class="brand">
-      <span class="brand-logo">CE</span>
-      <span class="brand-name">ENASTIC</span>
+    <a href="#accueil" class="brand">
+      <span class="brand-logo">AA</span>
+      <span class="brand-name">Ahmat<span class="brand-dot">.</span></span>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#accueil" class="nav-link active">Accueil</a></li>
-      <li><a href="#evenements" class="nav-link">Événements</a></li>
-      <li><a href="#ressources" class="nav-link">Ressources</a></li>
-      <li><a href="#forum" class="nav-link">Forum</a></li>
-      <li><a href="#stages" class="nav-link">Stages & Emplois</a></li>
-      <li><a href="#galerie" class="nav-link">Galerie</a></li>
+      <li><a href="#apropos" class="nav-link">À propos</a></li>
+      <li><a href="#competences" class="nav-link">Compétences</a></li>
+      <li><a href="#projets" class="nav-link">Projets</a></li>
+      <li><a href="#parcours" class="nav-link">Parcours</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-actions">
-      <button class="btn-ghost" id="loginBtn">Connexion</button>
-      <button class="btn-primary" id="signupBtn">S'inscrire</button>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+      <a href="cv.pdf" download class="btn-ghost btn-sm" id="cvBtn">↓ CV</a>
+      <a href="#contact" class="btn-primary btn-sm">Me contacter</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -37,428 +44,432 @@
 </nav>
 
 <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
-<section id="accueil" class="hero">
+<header id="accueil" class="hero">
   <div class="hero-bg">
     <div class="hero-circle c1"></div>
     <div class="hero-circle c2"></div>
     <div class="hero-grid"></div>
   </div>
-  <div class="hero-content">
-    <span class="hero-eyebrow">Club Étudiant · ENASTIC · N'Djaména</span>
-    <h1 class="hero-title">Apprendre, Créer,<br><em>Évoluer ensemble.</em></h1>
-    <p class="hero-desc">CEENASTIC est l'espace numérique officiel des étudiants de l'ENASTIC — cours partagés, événements, projets collaboratifs et bien plus.</p>
-    <div class="hero-cta">
-      <button class="btn-primary btn-lg" id="heroJoin">Rejoindre le club</button>
-      <button class="btn-outline btn-lg" id="heroDiscover">Découvrir →</button>
-    </div>
-    <div class="hero-stats">
-      <div class="stat"><span class="stat-num" data-target="340">0</span><span class="stat-label">Membres actifs</span></div>
-      <div class="stat-divider"></div>
-      <div class="stat"><span class="stat-num" data-target="120">0</span><span class="stat-label">Ressources partagées</span></div>
-      <div class="stat-divider"></div>
-      <div class="stat"><span class="stat-num" data-target="28">0</span><span class="stat-label">Événements organisés</span></div>
-    </div>
-  </div>
-</section>
 
-<!-- ═══════════════════════════ ACTUALITÉS ═══════════════════════════ -->
-<section class="section" id="actualites">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Actualités</span>
-      <h2>Dernières nouvelles du club</h2>
+  <div class="hero-content container">
+    <div class="hero-text">
+      <span class="hero-status"><span class="dot-pulse"></span> Disponible pour un stage ou une alternance</span>
+      <!-- [À PERSONNALISER] Nom complet -->
+      <h1 class="hero-title">Ahmat<br><em>Abakar</em></h1>
+      <p class="hero-role">
+        <span class="role-static">&gt;</span>
+        <span id="typedRole"></span><span class="caret">▌</span>
+      </p>
+      <p class="hero-desc">
+        Étudiant en informatique à l'<strong>ENASTIC</strong> (N'Djaména, Tchad), spécialisé en
+        <strong>administration et sécurité des réseaux et systèmes</strong>. Je conçois, sécurise et supervise
+        des infrastructures : pare-feu, annuaires, VPN, supervision et durcissement système.
+      </p>
+      <div class="hero-cta">
+        <a href="#projets" class="btn-primary btn-lg">Voir mes projets</a>
+        <a href="#contact" class="btn-outline btn-lg">Me contacter →</a>
+      </div>
+      <div class="hero-social">
+        <!-- [À PERSONNALISER] Liens sociaux -->
+        <a href="https://github.com/AhmatAbakar0858" target="_blank" rel="noopener" class="social-chip">GitHub</a>
+        <a href="#" class="social-chip">LinkedIn</a>
+        <a href="mailto:beguelenangtoudjou@gmail.com" class="social-chip">Email</a>
+      </div>
     </div>
-    <div class="news-grid" id="newsGrid">
-      <article class="news-card featured">
-        <div class="news-badge">À la une</div>
-        <div class="news-meta"><span class="news-cat">Événement</span><span class="news-date">10 Juin 2026</span></div>
-        <h3>Hackathon ENASTIC 2026 — Inscriptions ouvertes</h3>
-        <p>48h de programmation intensive pour résoudre des problèmes réels du Tchad. Équipes de 3 à 5 membres. Prix à gagner !</p>
-        <a href="#" class="news-link">Lire la suite →</a>
-      </article>
-      <article class="news-card">
-        <div class="news-meta"><span class="news-cat">Ressources</span><span class="news-date">8 Juin 2026</span></div>
-        <h3>Nouveaux cours de Réseaux & Télécom disponibles</h3>
-        <p>10 nouveaux documents de cours uploadés par vos camarades de 3ème année.</p>
-        <a href="#" class="news-link">Lire la suite →</a>
-      </article>
-      <article class="news-card">
-        <div class="news-meta"><span class="news-cat">Opportunité</span><span class="news-date">5 Juin 2026</span></div>
-        <h3>Stage chez Tigo Tchad — Candidatures acceptées</h3>
-        <p>3 postes de stagiaires en développement logiciel pour les étudiants en L3 et Master.</p>
-        <a href="#" class="news-link">Lire la suite →</a>
-      </article>
-    </div>
-  </div>
-</section>
 
-<!-- ═══════════════════════════ FONCTIONNALITÉS ═══════════════════════════ -->
-<section class="section section-features" id="features">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Fonctionnalités</span>
-      <h2>Tout ce dont tu as besoin</h2>
-      <p class="section-desc">Une plateforme construite par et pour les étudiants de l'ENASTIC.</p>
-    </div>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">📚</div>
-        <h3>Cours & Ressources</h3>
-        <p>Partage et télécharge des PDF, notes de cours, exercices corrigés par filière et année.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🗓️</div>
-        <h3>Calendrier & Emploi du temps</h3>
-        <p>Consulte et synchronise l'emploi du temps, les examens et les deadlines importantes.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">💬</div>
-        <h3>Forum de discussion</h3>
-        <p>Pose tes questions, échange avec tes camarades par matière ou par promotion.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🎯</div>
-        <h3>Événements & Activités</h3>
-        <p>Découvre et inscris-toi aux conférences, ateliers, hackathons et sorties du club.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">💼</div>
-        <h3>Stages & Emplois</h3>
-        <p>Accède aux offres de stages, alternances et emplois réservées aux membres CEENASTIC.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🤝</div>
-        <h3>Projets Collaboratifs</h3>
-        <p>Rejoins ou propose un projet, forme ton équipe, et construis quelque chose de concret.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Carte terminal -->
+    <div class="hero-visual">
+      <div class="terminal">
+        <div class="term-bar">
+          <span class="term-dot red"></span>
+          <span class="term-dot yellow"></span>
+          <span class="term-dot green"></span>
+          <span class="term-title">ahmat@enastic: ~</span>
+        </div>
+        <pre class="term-body"><span class="t-prompt">$</span> whoami --profile
+<span class="t-key">nom</span>        : Ahmat Abakar
+<span class="t-key">rôle</span>       : Admin Systèmes &amp; Sécurité Réseau
+<span class="t-key">école</span>      : ENASTIC — N'Djaména, Tchad
+<span class="t-key">focus</span>      : [ firewall, AD, VPN, SIEM, hardening ]
+<span class="t-key">os</span>         : Debian · Ubuntu · Windows Server
+<span class="t-key">statut</span>     : <span class="t-ok">ouvert aux opportunités</span>
 
-<!-- ═══════════════════════════ ÉVÉNEMENTS ═══════════════════════════ -->
-<section class="section" id="evenements">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Agenda</span>
-      <h2>Événements à venir</h2>
-    </div>
-    <div class="events-list" id="eventsList">
-      <div class="event-item">
-        <div class="event-date-box"><span class="eday">15</span><span class="emonth">JUN</span></div>
-        <div class="event-info">
-          <span class="event-tag">Hackathon</span>
-          <h3>Hackathon ENASTIC 2026</h3>
-          <p>Campus ENASTIC · 08h00 — 48h non-stop</p>
-        </div>
-        <button class="btn-primary btn-sm event-register-btn" data-event="Hackathon ENASTIC 2026">S'inscrire</button>
+<span class="t-prompt">$</span> uptime --learning
+<span class="t-com">apprentissage continu : actif depuis 2021</span>
+<span class="t-prompt">$</span> <span class="caret">▌</span></pre>
       </div>
-      <div class="event-item">
-        <div class="event-date-box"><span class="eday">20</span><span class="emonth">JUN</span></div>
-        <div class="event-info">
-          <span class="event-tag">Conférence</span>
-          <h3>Cybersécurité & IA en Afrique</h3>
-          <p>Amphithéâtre principal · 14h00 – 17h00</p>
-        </div>
-        <button class="btn-outline btn-sm event-register-btn" data-event="Cybersécurité & IA en Afrique">Réserver</button>
-      </div>
-      <div class="event-item">
-        <div class="event-date-box"><span class="eday">28</span><span class="emonth">JUN</span></div>
-        <div class="event-info">
-          <span class="event-tag">Atelier</span>
-          <h3>Workshop : Développement Web avec React</h3>
-          <p>Salle Informatique B · 09h00 – 12h00</p>
-        </div>
-        <button class="btn-outline btn-sm event-register-btn" data-event="Workshop React">Réserver</button>
-      </div>
-      <div class="event-item">
-        <div class="event-date-box"><span class="eday">05</span><span class="emonth">JUL</span></div>
-        <div class="event-info">
-          <span class="event-tag">Réseautage</span>
-          <h3>Soirée Alumni & Étudiants ENASTIC</h3>
-          <p>Campus ENASTIC · 18h00 – 22h00</p>
-        </div>
-        <button class="btn-outline btn-sm event-register-btn" data-event="Soirée Alumni">Réserver</button>
-      </div>
+      <div class="hero-badge-float b1">🔐 Sécurité</div>
+      <div class="hero-badge-float b2">🌐 Réseaux</div>
+      <div class="hero-badge-float b3">🖥️ Systèmes</div>
     </div>
   </div>
-</section>
 
-<!-- ═══════════════════════════ RESSOURCES ═══════════════════════════ -->
-<section class="section section-alt" id="ressources">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Bibliothèque</span>
-      <h2>Ressources pédagogiques</h2>
-      <p class="section-desc">Filtre par filière, année ou matière. Partage tes propres cours.</p>
-    </div>
-    <div class="resources-filters">
-      <button class="filter-btn active" data-filter="all">Tout</button>
-      <button class="filter-btn" data-filter="l1">Licence 1</button>
-      <button class="filter-btn" data-filter="l2">Licence 2</button>
-      <button class="filter-btn" data-filter="l3">Licence 3</button>
-      <button class="filter-btn" data-filter="master">Master</button>
-    </div>
-    <div class="resources-grid" id="resourcesGrid">
-      <div class="resource-card" data-year="l1">
-        <div class="resource-icon">📄</div>
-        <div class="resource-info">
-          <span class="resource-year">L1</span>
-          <h4>Algèbre & Analyse — Cours complet</h4>
-          <span class="resource-meta">PDF · 2.4 MB · Partagé par Moussa D.</span>
-        </div>
-        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
-      </div>
-      <div class="resource-card" data-year="l2">
-        <div class="resource-icon">📄</div>
-        <div class="resource-info">
-          <span class="resource-year">L2</span>
-          <h4>Réseaux Informatiques — Résumé + Exercices</h4>
-          <span class="resource-meta">PDF · 1.8 MB · Partagé par Aïcha K.</span>
-        </div>
-        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
-      </div>
-      <div class="resource-card" data-year="l3">
-        <div class="resource-icon">📄</div>
-        <div class="resource-info">
-          <span class="resource-year">L3</span>
-          <h4>Architecture des Systèmes Distribués</h4>
-          <span class="resource-meta">PDF · 3.1 MB · Partagé par Ibrahim S.</span>
-        </div>
-        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
-      </div>
-      <div class="resource-card" data-year="l1">
-        <div class="resource-icon">📄</div>
-        <div class="resource-info">
-          <span class="resource-year">L1</span>
-          <h4>Introduction à la Programmation (C)</h4>
-          <span class="resource-meta">PDF · 1.2 MB · Partagé par Fatima H.</span>
-        </div>
-        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
-      </div>
-      <div class="resource-card" data-year="master">
-        <div class="resource-icon">📄</div>
-        <div class="resource-info">
-          <span class="resource-year">Master</span>
-          <h4>Intelligence Artificielle — Deep Learning</h4>
-          <span class="resource-meta">PDF · 4.7 MB · Partagé par Saleh M.</span>
-        </div>
-        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
-      </div>
-      <div class="resource-card" data-year="l2">
-        <div class="resource-icon">📄</div>
-        <div class="resource-info">
-          <span class="resource-year">L2</span>
-          <h4>Bases de données relationnelles — TD corrigés</h4>
-          <span class="resource-meta">PDF · 0.9 MB · Partagé par Hawa T.</span>
-        </div>
-        <button class="btn-ghost btn-sm dl-btn">↓ Télécharger</button>
-      </div>
-    </div>
-    <div class="resources-upload">
-      <button class="btn-primary" id="uploadBtn">+ Partager un cours</button>
-    </div>
+  <div class="hero-stats container">
+    <div class="stat"><span class="stat-num" data-target="12">0</span><span class="stat-label">Projets &amp; labs</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num" data-target="20">0</span><span class="stat-suffix">+</span><span class="stat-label">Technologies</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num" data-target="4">0</span><span class="stat-label">Certifications visées</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-label">Langues parlées</span></div>
   </div>
-</section>
-
-<!-- ═══════════════════════════ FORUM ═══════════════════════════ -->
-<section class="section" id="forum">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Communauté</span>
-      <h2>Forum des étudiants</h2>
-      <p class="section-desc">Pose tes questions, partage tes astuces, aide tes camarades.</p>
-    </div>
-    <div class="forum-categories">
-      <div class="forum-cat">
-        <div class="forum-cat-icon">💡</div>
-        <div class="forum-cat-info">
-          <h4>Aide aux cours</h4>
-          <p>Postes des questions sur les matières</p>
-          <span class="forum-count">42 discussions</span>
-        </div>
-        <span class="forum-arrow">→</span>
-      </div>
-      <div class="forum-cat">
-        <div class="forum-cat-icon">🖥️</div>
-        <div class="forum-cat-info">
-          <h4>Projets & Code</h4>
-          <p>Partage de code, revue de projets</p>
-          <span class="forum-count">28 discussions</span>
-        </div>
-        <span class="forum-arrow">→</span>
-      </div>
-      <div class="forum-cat">
-        <div class="forum-cat-icon">🎓</div>
-        <div class="forum-cat-info">
-          <h4>Vie étudiante</h4>
-          <p>Logement, bons plans, annonces</p>
-          <span class="forum-count">61 discussions</span>
-        </div>
-        <span class="forum-arrow">→</span>
-      </div>
-      <div class="forum-cat">
-        <div class="forum-cat-icon">🌍</div>
-        <div class="forum-cat-info">
-          <h4>Opportunités</h4>
-          <p>Bourses, concours, call for papers</p>
-          <span class="forum-count">17 discussions</span>
-        </div>
-        <span class="forum-arrow">→</span>
-      </div>
-    </div>
-    <div class="forum-recent">
-      <h3 class="forum-recent-title">Derniers sujets</h3>
-      <div class="forum-thread">
-        <div class="thread-avatar">M</div>
-        <div class="thread-content">
-          <h5>Comment préparer l'examen de Réseaux L2 ?</h5>
-          <span class="thread-meta">Moussa · il y a 2h · 8 réponses</span>
-        </div>
-        <span class="thread-badge hot">🔥 Actif</span>
-      </div>
-      <div class="forum-thread">
-        <div class="thread-avatar">A</div>
-        <div class="thread-content">
-          <h5>Recherche coéquipiers pour le Hackathon 2026</h5>
-          <span class="thread-meta">Aïcha · il y a 5h · 12 réponses</span>
-        </div>
-        <span class="thread-badge">Nouveau</span>
-      </div>
-      <div class="forum-thread">
-        <div class="thread-avatar">I</div>
-        <div class="thread-content">
-          <h5>Partage — Mon stage chez Airtel Tchad (retour d'expérience)</h5>
-          <span class="thread-meta">Ibrahim · il y a 1j · 23 réponses</span>
-        </div>
-        <span class="thread-badge hot">🔥 Actif</span>
-      </div>
-    </div>
-    <div class="text-center mt-32">
-      <button class="btn-outline" id="forumBtn">Accéder au forum complet →</button>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ STAGES ═══════════════════════════ -->
-<section class="section section-alt" id="stages">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Carrière</span>
-      <h2>Stages & Emplois</h2>
-      <p class="section-desc">Offres exclusives réservées aux membres CEENASTIC.</p>
-    </div>
-    <div class="jobs-grid">
-      <div class="job-card">
-        <div class="job-header">
-          <div class="job-logo">T</div>
-          <div>
-            <h4>Développeur Web Stagiaire</h4>
-            <span class="job-company">Tigo Tchad</span>
-          </div>
-          <span class="job-type internship">Stage</span>
-        </div>
-        <p class="job-desc">Développement d'applications web pour la gestion interne. Stack : React, Node.js, PostgreSQL.</p>
-        <div class="job-footer">
-          <span class="job-location">📍 N'Djaména</span>
-          <span class="job-duration">⏱ 3 mois</span>
-          <button class="btn-primary btn-sm">Postuler</button>
-        </div>
-      </div>
-      <div class="job-card">
-        <div class="job-header">
-          <div class="job-logo">A</div>
-          <div>
-            <h4>Technicien Réseaux</h4>
-            <span class="job-company">Airtel Tchad</span>
-          </div>
-          <span class="job-type internship">Stage</span>
-        </div>
-        <p class="job-desc">Maintenance et supervision du réseau mobile. Formation assurée sur les équipements Ericsson.</p>
-        <div class="job-footer">
-          <span class="job-location">📍 N'Djaména</span>
-          <span class="job-duration">⏱ 6 mois</span>
-          <button class="btn-primary btn-sm">Postuler</button>
-        </div>
-      </div>
-      <div class="job-card">
-        <div class="job-header">
-          <div class="job-logo">M</div>
-          <div>
-            <h4>Analyste Data Junior</h4>
-            <span class="job-company">Ministère du Numérique</span>
-          </div>
-          <span class="job-type job">Emploi</span>
-        </div>
-        <p class="job-desc">Analyse de données pour des projets d'e-gouvernance. Python, SQL et Power BI requis.</p>
-        <div class="job-footer">
-          <span class="job-location">📍 N'Djaména</span>
-          <span class="job-duration">⏱ CDI</span>
-          <button class="btn-primary btn-sm">Postuler</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ GALERIE ═══════════════════════════ -->
-<section class="section" id="galerie">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Mémoires</span>
-      <h2>Galerie du club</h2>
-    </div>
-    <div class="gallery-grid">
-      <div class="gallery-item g-large"><div class="gallery-label">Hackathon 2025</div></div>
-      <div class="gallery-item"><div class="gallery-label">Conférence IA</div></div>
-      <div class="gallery-item"><div class="gallery-label">Atelier Web</div></div>
-      <div class="gallery-item"><div class="gallery-label">Remise des prix</div></div>
-      <div class="gallery-item g-wide"><div class="gallery-label">Soirée Alumni 2025</div></div>
-    </div>
-  </div>
-</section>
+</header>
 
 <!-- ═══════════════════════════ À PROPOS ═══════════════════════════ -->
-<section class="section section-alt" id="apropos">
+<section class="section" id="apropos">
   <div class="container about-layout">
-    <div class="about-text">
+    <div class="about-text reveal">
       <span class="section-tag">À propos</span>
-      <h2>Qui sommes-nous ?</h2>
-      <p>Le <strong>CEENASTIC</strong> (Club Étudiant de l'ENASTIC) est l'association officielle des étudiants de l'École Nationale Supérieure des Arts et Sciences des Technologies de l'Information et de la Communication du Tchad.</p>
-      <p>Fondé pour favoriser l'entraide académique, le développement professionnel et l'épanouissement personnel, le club organise des événements, facilite le partage de connaissances et connecte les étudiants aux opportunités du secteur numérique en Afrique.</p>
-      <div class="about-team">
-        <h3>Bureau exécutif 2025–2026</h3>
-        <div class="team-grid">
-          <div class="team-member"><div class="member-avatar">P</div><span class="member-name">Président</span></div>
-          <div class="team-member"><div class="member-avatar">S</div><span class="member-name">Secrétaire</span></div>
-          <div class="team-member"><div class="member-avatar">T</div><span class="member-name">Trésorier</span></div>
-          <div class="team-member"><div class="member-avatar">R</div><span class="member-name">Resp. Comm.</span></div>
-        </div>
+      <h2>Sécuriser l'infrastructure,<br>pas seulement l'administrer.</h2>
+      <p>
+        Passionné d'informatique depuis le lycée, je me suis orienté vers l'<strong>administration des réseaux
+        et des systèmes</strong> parce que c'est là que tout se joue : la disponibilité, l'intégrité et la
+        confidentialité des données d'une organisation reposent sur des choix d'architecture concrets.
+      </p>
+      <p>
+        À l'ENASTIC, je monte régulièrement des laboratoires virtualisés (GNS3, VirtualBox, Proxmox) pour
+        reproduire des environnements d'entreprise : domaine Active Directory, segmentation VLAN, pare-feu
+        pfSense, VPN site-à-site, supervision Zabbix et collecte de logs. J'y teste aussi bien la
+        configuration que les attaques — parce qu'on ne défend bien que ce qu'on sait attaquer.
+      </p>
+      <p>
+        Membre actif du <a href="club/index.html" class="inline-link">club CEENASTIC</a>, je participe à
+        l'entraide entre étudiants, aux hackathons et aux ateliers techniques du campus.
+      </p>
+
+      <div class="about-facts">
+        <!-- [À PERSONNALISER] Informations personnelles -->
+        <div class="fact"><span class="fact-label">Localisation</span><span class="fact-value">N'Djaména, Tchad</span></div>
+        <div class="fact"><span class="fact-label">Formation</span><span class="fact-value">ENASTIC — Informatique</span></div>
+        <div class="fact"><span class="fact-label">Spécialité</span><span class="fact-value">Admin. Sécurité Réseaux &amp; Systèmes</span></div>
+        <div class="fact"><span class="fact-label">Langues</span><span class="fact-value">Français, Arabe, Anglais</span></div>
+        <div class="fact"><span class="fact-label">Mobilité</span><span class="fact-value">Sur site &amp; télétravail</span></div>
+        <div class="fact"><span class="fact-label">Disponibilité</span><span class="fact-value">Immédiate</span></div>
       </div>
     </div>
-    <div class="about-visual">
-      <div class="about-card-big">
-        <div class="about-big-num">2021</div>
-        <div class="about-big-label">Année de fondation</div>
+
+    <div class="about-visual reveal">
+      <div class="focus-card">
+        <div class="focus-icon">🛡️</div>
+        <h3>Défense en profondeur</h3>
+        <p>Segmentation réseau, filtrage applicatif, moindre privilège et journalisation centralisée.</p>
       </div>
-      <div class="about-cards-row">
-        <div class="about-mini-card"><span>🏫</span> ENASTIC, N'Djaména</div>
-        <div class="about-mini-card"><span>📡</span> Numérique & Tech</div>
+      <div class="focus-card">
+        <div class="focus-icon">⚙️</div>
+        <h3>Automatisation</h3>
+        <p>Scripts Bash, PowerShell et Python pour l'inventaire, les sauvegardes et le durcissement.</p>
+      </div>
+      <div class="focus-card">
+        <div class="focus-icon">📊</div>
+        <h3>Supervision</h3>
+        <p>Métriques, alertes et analyse de logs pour détecter avant que l'incident ne devienne panne.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════ NEWSLETTER ═══════════════════════════ -->
-<section class="section section-newsletter">
+<!-- ═══════════════════════════ COMPÉTENCES ═══════════════════════════ -->
+<section class="section section-alt" id="competences">
   <div class="container">
-    <div class="newsletter-box">
-      <h2>Reste informé(e)</h2>
-      <p>Reçois les actualités du club, les nouvelles offres et les rappels d'événements directement dans ta boîte mail.</p>
-      <div class="newsletter-form">
-        <input type="email" id="newsletterEmail" placeholder="ton.email@enastic.td" />
-        <button class="btn-primary" id="newsletterBtn">S'abonner</button>
+    <div class="section-header reveal">
+      <span class="section-tag">Compétences</span>
+      <h2>Stack technique</h2>
+      <p class="section-desc">Ce que je pratique en laboratoire, en projet académique et en autoformation.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-head"><span class="skill-emoji">🌐</span><h3>Réseaux</h3></div>
+        <div class="skill-bar-row"><span>Routage &amp; commutation (Cisco)</span><span class="skill-pct">85%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
+        <div class="skill-bar-row"><span>VLAN, VPN, NAT, ACL</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+        <div class="skill-bar-row"><span>TCP/IP, DNS, DHCP</span><span class="skill-pct">90%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="90"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head"><span class="skill-emoji">🖥️</span><h3>Systèmes</h3></div>
+        <div class="skill-bar-row"><span>Linux (Debian, Ubuntu)</span><span class="skill-pct">85%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
+        <div class="skill-bar-row"><span>Windows Server &amp; Active Directory</span><span class="skill-pct">75%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="75"></div></div>
+        <div class="skill-bar-row"><span>Virtualisation (Proxmox, VirtualBox)</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head"><span class="skill-emoji">🔐</span><h3>Sécurité</h3></div>
+        <div class="skill-bar-row"><span>Pare-feu &amp; durcissement</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+        <div class="skill-bar-row"><span>Audit &amp; test d'intrusion</span><span class="skill-pct">70%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
+        <div class="skill-bar-row"><span>Supervision &amp; analyse de logs</span><span class="skill-pct">75%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="75"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head"><span class="skill-emoji">⌨️</span><h3>Scripting &amp; Dev</h3></div>
+        <div class="skill-bar-row"><span>Bash</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+        <div class="skill-bar-row"><span>Python</span><span class="skill-pct">70%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
+        <div class="skill-bar-row"><span>PowerShell</span><span class="skill-pct">65%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="65"></div></div>
       </div>
     </div>
+
+    <div class="tools-block reveal">
+      <h3 class="tools-title">Outils &amp; technologies</h3>
+      <div class="tools-chips">
+        <span class="chip">pfSense</span><span class="chip">Cisco IOS</span><span class="chip">GNS3</span>
+        <span class="chip">Packet Tracer</span><span class="chip">Wireshark</span><span class="chip">Nmap</span>
+        <span class="chip">Kali Linux</span><span class="chip">Metasploit</span><span class="chip">Burp Suite</span>
+        <span class="chip">Zabbix</span><span class="chip">Nagios</span><span class="chip">Wazuh</span>
+        <span class="chip">Proxmox</span><span class="chip">Docker</span><span class="chip">Active Directory</span>
+        <span class="chip">Apache / Nginx</span><span class="chip">OpenVPN</span><span class="chip">WireGuard</span>
+        <span class="chip">MySQL</span><span class="chip">Git</span><span class="chip">Bash</span><span class="chip">Python</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ SERVICES ═══════════════════════════ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Expertise</span>
+      <h2>Ce que je peux faire pour vous</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <span class="service-num">01</span>
+        <h3>Administration d'infrastructure</h3>
+        <p>Installation et configuration de serveurs Linux/Windows, annuaire Active Directory, services DNS,
+           DHCP, partage de fichiers, sauvegardes et politiques de mise à jour.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-num">02</span>
+        <h3>Conception &amp; sécurisation réseau</h3>
+        <p>Plan d'adressage, segmentation VLAN, routage inter-VLAN, règles de pare-feu, VPN site-à-site et
+           nomade, contrôle d'accès Wi-Fi.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-num">03</span>
+        <h3>Audit &amp; durcissement</h3>
+        <p>Scan de vulnérabilités, revue de configuration, application des bonnes pratiques CIS, gestion des
+           comptes et des privilèges, rapport d'audit avec plan de remédiation.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-num">04</span>
+        <h3>Supervision &amp; réponse à incident</h3>
+        <p>Mise en place de la métrologie et des alertes, centralisation des journaux, détection d'anomalies
+           et procédures de réaction aux incidents.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PROJETS ═══════════════════════════ -->
+<section class="section section-alt" id="projets">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Réalisations</span>
+      <h2>Projets &amp; laboratoires</h2>
+      <p class="section-desc">Maquettes d'entreprise, projets académiques et travaux personnels.</p>
+    </div>
+
+    <div class="proj-filters reveal">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="reseau">Réseau</button>
+      <button class="filter-btn" data-filter="securite">Sécurité</button>
+      <button class="filter-btn" data-filter="systeme">Système</button>
+      <button class="filter-btn" data-filter="dev">Dev &amp; Scripts</button>
+    </div>
+
+    <!-- [À PERSONNALISER] Ajoute, retire ou modifie tes projets ici -->
+    <div class="projects-grid" id="projectsGrid">
+      <article class="project-card reveal" data-cat="reseau securite">
+        <div class="project-top"><span class="project-icon">🏢</span><span class="project-year">2026</span></div>
+        <h3>Maquette réseau d'entreprise sécurisée</h3>
+        <p>Architecture complète sous GNS3 : cœur de réseau redondant, 5 VLAN métiers, routage inter-VLAN,
+           DMZ et pare-feu pfSense avec règles de filtrage documentées.</p>
+        <div class="project-tags"><span>GNS3</span><span>pfSense</span><span>VLAN</span><span>Cisco</span></div>
+      </article>
+
+      <article class="project-card reveal" data-cat="systeme">
+        <div class="project-top"><span class="project-icon">🗂️</span><span class="project-year">2026</span></div>
+        <h3>Domaine Active Directory multi-sites</h3>
+        <p>Déploiement d'un domaine Windows Server : OU par département, GPO de sécurité, stratégie de mots de
+           passe, partages avec ACL et scripts de connexion PowerShell.</p>
+        <div class="project-tags"><span>Windows Server</span><span>AD DS</span><span>GPO</span><span>PowerShell</span></div>
+      </article>
+
+      <article class="project-card reveal" data-cat="reseau securite">
+        <div class="project-top"><span class="project-icon">🔗</span><span class="project-year">2025</span></div>
+        <h3>VPN site-à-site &amp; accès nomade</h3>
+        <p>Interconnexion chiffrée de deux sites via IPsec, plus un accès distant OpenVPN/WireGuard avec
+           authentification par certificats et journalisation des connexions.</p>
+        <div class="project-tags"><span>IPsec</span><span>OpenVPN</span><span>WireGuard</span><span>PKI</span></div>
+      </article>
+
+      <article class="project-card reveal" data-cat="securite">
+        <div class="project-top"><span class="project-icon">🔎</span><span class="project-year">2025</span></div>
+        <h3>Audit de vulnérabilités d'un parc de test</h3>
+        <p>Cartographie réseau avec Nmap, détection de vulnérabilités, exploitation contrôlée en environnement
+           de laboratoire et rapport de remédiation priorisé par criticité.</p>
+        <div class="project-tags"><span>Nmap</span><span>Kali</span><span>Metasploit</span><span>Rapport</span></div>
+      </article>
+
+      <article class="project-card reveal" data-cat="securite systeme">
+        <div class="project-top"><span class="project-icon">📡</span><span class="project-year">2025</span></div>
+        <h3>Supervision &amp; centralisation des logs</h3>
+        <p>Déploiement de Zabbix pour la métrologie et de Wazuh pour la collecte des journaux, avec tableaux de
+           bord et alertes e-mail sur seuils critiques.</p>
+        <div class="project-tags"><span>Zabbix</span><span>Wazuh</span><span>Syslog</span><span>Alerting</span></div>
+      </article>
+
+      <article class="project-card reveal" data-cat="systeme dev">
+        <div class="project-top"><span class="project-icon">🧰</span><span class="project-year">2025</span></div>
+        <h3>Scripts d'automatisation d'administration</h3>
+        <p>Boîte à outils Bash/Python : inventaire des machines, sauvegarde incrémentale chiffrée, contrôle de
+           conformité des serveurs et rapport quotidien automatisé.</p>
+        <div class="project-tags"><span>Bash</span><span>Python</span><span>cron</span><span>rsync</span></div>
+      </article>
+
+      <article class="project-card reveal" data-cat="systeme">
+        <div class="project-top"><span class="project-icon">☁️</span><span class="project-year">2024</span></div>
+        <h3>Serveur de fichiers &amp; sauvegarde</h3>
+        <p>Serveur Samba sur Debian avec quotas, droits par groupe, snapshots et plan de sauvegarde 3-2-1
+           testé par restauration régulière.</p>
+        <div class="project-tags"><span>Debian</span><span>Samba</span><span>rsync</span><span>Backup</span></div>
+      </article>
+
+      <article class="project-card reveal" data-cat="dev">
+        <div class="project-top"><span class="project-icon">🎓</span><span class="project-year">2026</span></div>
+        <h3>Plateforme web du club CEENASTIC</h3>
+        <p>Site du club étudiant de l'ENASTIC : partage de ressources, agenda d'événements, forum et offres de
+           stage. Contribution au front-end et au déploiement.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <a href="club/index.html" class="project-link">Voir le site →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PARCOURS ═══════════════════════════ -->
+<section class="section" id="parcours">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Parcours</span>
+      <h2>Formation &amp; expériences</h2>
+    </div>
+
+    <!-- [À PERSONNALISER] Dates, écoles et expériences -->
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <span class="tl-date">2024 — aujourd'hui</span>
+        <h3>Licence en Informatique — ENASTIC</h3>
+        <span class="tl-sub">École Nationale Supérieure des Arts et Sciences des TIC · N'Djaména</span>
+        <p>Spécialisation en administration et sécurité des réseaux et systèmes. Travaux pratiques sur
+           l'architecture réseau, les systèmes d'exploitation, les bases de données et la cybersécurité.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <span class="tl-date">2025</span>
+        <h3>Stage — Support technique &amp; réseau</h3>
+        <span class="tl-sub">Structure d'accueil · N'Djaména</span>
+        <p>Assistance aux utilisateurs, maintenance du parc informatique, configuration de postes et
+           d'équipements réseau, documentation des interventions.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <span class="tl-date">2024 — aujourd'hui</span>
+        <h3>Membre actif — Club CEENASTIC</h3>
+        <span class="tl-sub">Club étudiant de l'ENASTIC</span>
+        <p>Participation aux ateliers techniques et hackathons, animation d'entraide entre étudiants et
+           contribution à la plateforme numérique du club.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <span class="tl-date">2021 — 2024</span>
+        <h3>Baccalauréat scientifique</h3>
+        <span class="tl-sub">Série D · Tchad</span>
+        <p>Premiers pas en informatique en autodidacte : montage de machines, découverte de Linux et des
+           réseaux domestiques.</p>
+      </div>
+    </div>
+
+    <h3 class="certs-title reveal">Certifications</h3>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-logo">CN</div>
+        <div><h4>Cisco CCNA</h4><span class="cert-org">Cisco Networking Academy</span></div>
+        <span class="cert-status progress">En cours</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">S+</div>
+        <div><h4>CompTIA Security+</h4><span class="cert-org">CompTIA</span></div>
+        <span class="cert-status planned">Visée 2026</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">LP</div>
+        <div><h4>LPIC-1</h4><span class="cert-org">Linux Professional Institute</span></div>
+        <span class="cert-status planned">Visée 2026</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">TH</div>
+        <div><h4>Parcours TryHackMe</h4><span class="cert-org">Cyber Defense &amp; Pre-Security</span></div>
+        <span class="cert-status done">Complété</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+<section class="section section-contact" id="contact">
+  <div class="container contact-layout">
+    <div class="contact-info reveal">
+      <span class="section-tag light">Contact</span>
+      <h2>Travaillons ensemble</h2>
+      <p>Une opportunité de stage, un projet d'infrastructure à sécuriser ou simplement une question
+         technique ? Écris-moi, je réponds sous 48 heures.</p>
+
+      <!-- [À PERSONNALISER] Coordonnées -->
+      <ul class="contact-list">
+        <li><span class="ci-icon">✉️</span><div><span class="ci-label">Email</span><a href="mailto:beguelenangtoudjou@gmail.com">beguelenangtoudjou@gmail.com</a></div></li>
+        <li><span class="ci-icon">📍</span><div><span class="ci-label">Localisation</span><span>N'Djaména, Tchad</span></div></li>
+        <li><span class="ci-icon">💻</span><div><span class="ci-label">GitHub</span><a href="https://github.com/AhmatAbakar0858" target="_blank" rel="noopener">@AhmatAbakar0858</a></div></li>
+        <li><span class="ci-icon">🎓</span><div><span class="ci-label">Club</span><a href="club/index.html">CEENASTIC — ENASTIC</a></div></li>
+      </ul>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cfName">Nom</label>
+          <input type="text" id="cfName" name="name" placeholder="Ton nom" required />
+        </div>
+        <div class="form-group">
+          <label for="cfEmail">Email</label>
+          <input type="email" id="cfEmail" name="email" placeholder="ton.email@exemple.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cfSubject">Sujet</label>
+        <input type="text" id="cfSubject" name="subject" placeholder="Proposition de stage, audit réseau…" required />
+      </div>
+      <div class="form-group">
+        <label for="cfMessage">Message</label>
+        <textarea id="cfMessage" name="message" rows="5" placeholder="Décris ton besoin en quelques lignes…" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary btn-full">Envoyer le message</button>
+      <p class="form-note">Le formulaire ouvre ton application mail avec le message pré-rempli.</p>
+    </form>
   </div>
 </section>
 
@@ -466,117 +477,36 @@
 <footer>
   <div class="container footer-inner">
     <div class="footer-brand">
-      <a href="#" class="brand"><span class="brand-logo">CE</span><span class="brand-name">ENASTIC</span></a>
-      <p>Le club officiel des étudiants de l'ENASTIC.</p>
+      <a href="#accueil" class="brand"><span class="brand-logo">AA</span><span class="brand-name">Ahmat<span class="brand-dot">.</span></span></a>
+      <p>Administration &amp; sécurité des réseaux et systèmes · N'Djaména, Tchad</p>
     </div>
     <div class="footer-links">
       <h4>Navigation</h4>
       <ul>
-        <li><a href="#evenements">Événements</a></li>
-        <li><a href="#ressources">Ressources</a></li>
-        <li><a href="#forum">Forum</a></li>
-        <li><a href="#stages">Stages & Emplois</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#parcours">Parcours</a></li>
       </ul>
     </div>
     <div class="footer-links">
-      <h4>Club</h4>
+      <h4>Ailleurs</h4>
       <ul>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#galerie">Galerie</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Règlement intérieur</a></li>
+        <li><a href="https://github.com/AhmatAbakar0858" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="club/index.html">Club CEENASTIC</a></li>
+        <li><a href="mailto:beguelenangtoudjou@gmail.com">Email</a></li>
       </ul>
-    </div>
-    <div class="footer-social">
-      <h4>Réseaux sociaux</h4>
-      <div class="social-links">
-        <a href="https://www.facebook.com/profile.php?id=61571312086629" target="_blank" class="social-btn facebook">Facebook</a>
-        <a href="#" class="social-btn">LinkedIn</a>
-        <a href="#" class="social-btn">WhatsApp</a>
-      </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2026 CEENASTIC — Club Étudiant ENASTIC · N'Djaména, Tchad</p>
+    <p>© <span id="year">2026</span> Ahmat Abakar — Portfolio</p>
   </div>
 </footer>
 
-<!-- ═══════════════════════════ MODALS ═══════════════════════════ -->
-<!-- Auth Modal -->
-<div class="modal-overlay" id="authModal">
-  <div class="modal">
-    <button class="modal-close" id="closeAuth">✕</button>
-    <div class="modal-tabs">
-      <button class="modal-tab active" data-tab="login">Connexion</button>
-      <button class="modal-tab" data-tab="signup">Inscription</button>
-    </div>
-    <!-- Login Form -->
-    <div class="modal-form" id="loginForm">
-      <h2>Bon retour 👋</h2>
-      <p class="modal-sub">Connecte-toi à ton espace étudiant</p>
-      <div class="form-group">
-        <label>Email ENASTIC</label>
-        <input type="email" placeholder="prenom.nom@enastic.td" />
-      </div>
-      <div class="form-group">
-        <label>Mot de passe</label>
-        <input type="password" placeholder="••••••••" />
-      </div>
-      <button class="btn-primary btn-full" id="doLogin">Se connecter</button>
-      <p class="form-switch">Pas encore membre ? <a href="#" class="switch-tab" data-target="signup">S'inscrire →</a></p>
-    </div>
-    <!-- Signup Form -->
-    <div class="modal-form hidden" id="signupForm">
-      <h2>Rejoins CEENASTIC 🎓</h2>
-      <p class="modal-sub">Crée ton espace étudiant gratuit</p>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Prénom</label>
-          <input type="text" placeholder="Prénom" />
-        </div>
-        <div class="form-group">
-          <label>Nom</label>
-          <input type="text" placeholder="Nom" />
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Email institutionnel</label>
-        <input type="email" placeholder="prenom.nom@enastic.td" />
-      </div>
-      <div class="form-group">
-        <label>Filière</label>
-        <select>
-          <option value="">Sélectionne ta filière</option>
-          <option>Génie Logiciel</option>
-          <option>Réseaux & Télécommunications</option>
-          <option>Systèmes Embarqués</option>
-          <option>Sécurité Informatique</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Année d'étude</label>
-        <select>
-          <option value="">Sélectionne ton année</option>
-          <option>Licence 1</option>
-          <option>Licence 2</option>
-          <option>Licence 3</option>
-          <option>Master 1</option>
-          <option>Master 2</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Mot de passe</label>
-        <input type="password" placeholder="8 caractères minimum" />
-      </div>
-      <button class="btn-primary btn-full" id="doSignup">Créer mon compte</button>
-      <p class="form-switch">Déjà membre ? <a href="#" class="switch-tab" data-target="login">Se connecter →</a></p>
-    </div>
-  </div>
-</div>
-
-<!-- Toast Notification -->
+<button class="to-top" id="toTop" aria-label="Retour en haut">↑</button>
 <div class="toast" id="toast"></div>
 
-<script src="app.js"></script>
+<script src="portfolio.js"></script>
 </body>
 </html>
