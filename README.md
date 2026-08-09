@@ -28,6 +28,7 @@ club/             → Site du club CEENASTIC (conservé, accessible sur /club/)
 | Réalisations | Missions professionnelles et travaux issus des formations, filtrables |
 | Parcours | Frise formation & expérience, certifications, langues |
 | Disponibilité | Missions sur site à N'Djamena, à distance, délai de réponse et références |
+| Témoignages | Deux cartes en attente de vrais avis (clients, enseignants, collègues) |
 | Contact | Email, téléphone, WhatsApp, LinkedIn, Facebook, GitHub, CV et formulaire (`mailto:`) |
 
 Tout le contenu provient du CV. Les chiffres du bandeau d'accueil correspondent à :
@@ -57,6 +58,21 @@ Les points à faire évoluer sont marqués `[À COMPLÉTER]` dans `index.html` :
 9. **Polices** — Space Grotesk (titres), Plus Jakarta Sans (texte) et JetBrains Mono (terminal),
    chargées depuis Google Fonts. Pour en changer : modifier le `<link>` dans `index.html` et les
    variables `--font-display` / `--font-body` en haut de `portfolio.css`.
+10. **Témoignages** — remplacer le contenu d'une carte `.testimonial-card.empty` par un vrai avis
+    (le modèle HTML est en commentaire juste au-dessus des cartes) et retirer la classe `empty`.
+    Toujours demander l'accord de la personne avant de publier son nom.
+
+### Référencement (SEO)
+
+`index.html` déclare le `title`, la `description`, les balises Open Graph et Twitter, l'URL canonique
+et un bloc de données structurées `schema.org/Person`. Si l'adresse du site change, mettre à jour
+`<link rel="canonical">`, `og:url` et le champ `url` du bloc JSON-LD.
+
+### Accessibilité
+
+Lien d'évitement au clavier, anneaux de focus visibles (`:focus-visible`), libellés de formulaire
+associés à leurs champs, `aria-label` sur la navigation et le menu, et animations désactivées quand
+le système demande `prefers-reduced-motion`.
 
 ## Aperçu en local
 
