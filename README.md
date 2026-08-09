@@ -27,7 +27,8 @@ club/             → Site du club CEENASTIC (conservé, accessible sur /club/)
 | Compétences | Systèmes & réseaux, programmation, données & outils, infographie + qualités |
 | Réalisations | Missions professionnelles et travaux issus des formations, filtrables |
 | Parcours | Frise formation & expérience, certifications, langues |
-| Contact | Email, téléphone, GitHub, CV et formulaire (ouverture via `mailto:`) |
+| Disponibilité | Missions sur site à N'Djamena, à distance, délai de réponse et références |
+| Contact | Email, téléphone, WhatsApp, LinkedIn, Facebook, GitHub, CV et formulaire (`mailto:`) |
 
 Tout le contenu provient du CV. Les chiffres du bandeau d'accueil correspondent à :
 2 ans d'expérience professionnelle, 6 formations/certificats, 4 langages de programmation, 3 langues.
@@ -37,7 +38,9 @@ Tout le contenu provient du CV. Les chiffres du bandeau d'accueil correspondent 
 Les points à faire évoluer sont marqués `[À COMPLÉTER]` dans `index.html` :
 
 1. **Nouvelles réalisations** — dupliquer un bloc `<article class="project-card">` ; l'attribut
-   `data-cat` gère le filtrage (`pro`, `systeme`, `dev`, `data`, `design`).
+   `data-cat` gère le filtrage (`pro`, `systeme`, `dev`, `data`, `design`). Chaque carte suit la
+   structure **Contexte → Mission → Réalisé** ; ajouter une quatrième ligne `Résultat` dès qu'un
+   chiffre concret est disponible (nombre de postes, délai, économie réalisée).
 2. **Nouvelles formations** — ajouter un bloc `.cert-card` ; le badge se règle avec la classe
    `done` (vert), `progress` (bleu) ou `planned` (orange).
 3. **Niveaux de compétence** — attribut `data-level` de chaque `.skill-fill` (0 à 100) et le
@@ -47,7 +50,11 @@ Les points à faire évoluer sont marqués `[À COMPLÉTER]` dans `index.html` :
 6. **Liens sociaux** — WhatsApp, LinkedIn, Facebook et GitHub apparaissent à trois endroits :
    bandeau d'accueil, section contact et pied de page.
 7. **CV** — remplacer `cv.pdf` par la version à jour, en gardant le même nom de fichier.
-8. **Polices** — Space Grotesk (titres), Plus Jakarta Sans (texte) et JetBrains Mono (terminal),
+8. **Photo de profil** — déposer une photo carrée nommée `photo.jpg` à la racine, puis remplacer
+   le bloc `.avatar-initials` de la section « À propos » par :
+   `<img src="photo.jpg" alt="Ahmat Abakar Beguele" class="avatar-photo" />`.
+   Compresser l'image avant de l'ajouter (viser moins de 200 Ko) pour garder le site rapide.
+9. **Polices** — Space Grotesk (titres), Plus Jakarta Sans (texte) et JetBrains Mono (terminal),
    chargées depuis Google Fonts. Pour en changer : modifier le `<link>` dans `index.html` et les
    variables `--font-display` / `--font-body` en haut de `portfolio.css`.
 
