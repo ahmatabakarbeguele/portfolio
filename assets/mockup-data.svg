@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Aperçu de projet données">
+  <rect width="400" height="240" rx="12" fill="#0b1c35"/>
+  <rect x="18" y="18" width="364" height="204" rx="9" fill="#ffffff"/>
+  <rect x="18" y="18" width="364" height="30" rx="9" fill="#f1f5f9"/>
+  <rect x="18" y="40" width="364" height="8" fill="#f1f5f9"/>
+  <circle cx="36" cy="33" r="4.5" fill="#e2e8f0"/>
+  <circle cx="52" cy="33" r="4.5" fill="#e2e8f0"/>
+  <circle cx="68" cy="33" r="4.5" fill="#e2e8f0"/>
+  <rect x="86" y="27" width="150" height="12" rx="6" fill="#e2e8f0"/>
+  <rect x="34" y="78" width="160" height="16" rx="6" fill="#22d3ee" opacity="1"/>
+  <rect x="34" y="106" width="320" height="10" rx="5" fill="#cbd5e1" opacity=".55"/>
+  <rect x="34" y="128" width="200" height="10" rx="5" fill="#cbd5e1" opacity=".55"/>
+  <rect x="34" y="150" width="110" height="22" rx="6" fill="#22d3ee" opacity="1"/>
+</svg>

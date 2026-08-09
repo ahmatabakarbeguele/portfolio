@@ -1,7 +1,8 @@
 /* ─────────────────────────────────────────
-   PORTFOLIO — Ahmat Abakar
-   Administration Sécurité Réseaux & Systèmes
-   Palette : Bleu nuit & Blanc · Accent cyan
+   PORTFOLIO — Ahmat Abakar Beguele
+   Développeur Web · N'Djamena, Tchad
+   Palette : bleu #2563eb (principale) · cyan #22d3ee (accent)
+             blanc #ffffff · encre #1a1a1a · neutres
 ───────────────────────────────────────── */
 
 /* ── TOKENS ── */
@@ -20,8 +21,8 @@
   --gray-200: #e2e8f0;
   --gray-400: #94a3b8;
   --gray-600: #475569;
-  --gray-800: #1e293b;
-  --accent:   #f59e0b;
+  --gray-800: #1a1a1a;   /* encre principale demandée */
+  --ink:      #1a1a1a;
   --cyan:     #22d3ee;
   --green:    #34d399;
 
@@ -185,10 +186,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .hero-title {
   font-family: var(--font-display); font-weight: 700;
-  font-size: clamp(38px, 5.2vw, 64px); line-height: 1.05; letter-spacing: -1.2px;
+  font-size: clamp(30px, 3.5vw, 46px); line-height: 1.12; letter-spacing: -.8px;
   margin-bottom: 16px;
 }
+/* Le métier passe juste sous le nom, légèrement plus petit */
 .hero-title em {
+  display: block; font-size: .84em; margin-top: 4px;
   font-style: normal;
   background: linear-gradient(100deg, var(--cyan), var(--blue-400));
   -webkit-background-clip: text; background-clip: text; color: transparent;
@@ -270,7 +273,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,.14); }
 
 /* ── SECTIONS ── */
-.section { padding: 96px 0; }
+.section { padding: 80px 0; }
 .section-alt { background: var(--gray-50); }
 .section-header { max-width: 660px; margin-bottom: 52px; }
 .section-tag {
@@ -372,7 +375,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
 .service-card {
   position: relative; background: var(--white); border: 1px solid var(--gray-200);
-  border-radius: var(--radius-lg); padding: 30px 28px; overflow: hidden;
+  border-radius: var(--radius-lg); padding: 30px 28px; overflow: hidden; box-shadow: var(--shadow-sm);
   transition: transform .25s, box-shadow .25s, border-color .25s;
 }
 .service-card::before {
@@ -402,7 +405,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .project-card {
   background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg);
-  padding: 26px 24px 24px; display: flex; flex-direction: column;
+  padding: 22px 22px 24px; display: flex; flex-direction: column; box-shadow: var(--shadow-sm);
   transition: transform .25s, box-shadow .25s, border-color .25s;
 }
 .project-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--blue-100); }
@@ -488,7 +491,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .testimonial-card {
   position: relative; display: flex; flex-direction: column;
   background: var(--white); border: 1px solid var(--gray-200);
-  border-radius: var(--radius-lg); padding: 30px 28px;
+  border-radius: var(--radius-lg); padding: 30px 28px; box-shadow: var(--shadow-sm);
   transition: transform .25s, box-shadow .25s, border-color .25s;
 }
 .testimonial-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--blue-100); }
@@ -511,11 +514,44 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .quote-cta { margin-top: 18px; font-size: 15px; font-weight: 600; color: var(--blue-500); align-self: flex-start; }
 .quote-cta:hover { color: var(--blue-600); }
 
+/* ── BOUTON WHATSAPP ── */
+.btn-whatsapp { background: #25d366; color: #052e16; }
+.btn-whatsapp:hover { background: #1ebe5b; box-shadow: 0 6px 18px rgba(37,211,102,.4); }
+.btn-whatsapp span { margin-right: 4px; }
+
+/* ── VISUEL DE PROJET (chargé en différé) ── */
+.project-thumb {
+  width: 100%; height: auto; aspect-ratio: 5 / 3; object-fit: cover;
+  border-radius: var(--radius-md); margin-bottom: 16px;
+  background: var(--gray-100);
+  transition: transform .3s;
+}
+.project-card:hover .project-thumb { transform: scale(1.02); }
+.project-cta { align-self: flex-start; margin-top: 16px; }
+
+/* ── GRILLE D'ICÔNES : TECHNOLOGIES WEB ── */
+.tech-grid {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-bottom: 34px;
+}
+.tech-item {
+  background: var(--white); border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-lg); padding: 24px 18px; text-align: center;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+.tech-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--blue-100); }
+.tech-icon {
+  display: grid; place-items: center; width: 52px; height: 52px; margin: 0 auto 12px;
+  background: var(--blue-900); color: var(--white); border-radius: 14px;
+  font-family: var(--font-mono); font-size: 17px; font-weight: 500;
+}
+.tech-item h3 { font-family: var(--font-display); font-size: 16px; color: var(--blue-900); margin-bottom: 5px; }
+.tech-item p { font-size: 14px; color: var(--gray-600); line-height: 1.45; }
+
 /* ── DISPONIBILITÉ & RÉFÉRENCES ── */
 .dispo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .dispo-card {
   background: var(--white); border: 1px solid var(--gray-200);
-  border-radius: var(--radius-lg); padding: 28px 26px;
+  border-radius: var(--radius-lg); padding: 28px 26px; box-shadow: var(--shadow-sm);
   transition: transform .25s, box-shadow .25s, border-color .25s;
 }
 .dispo-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--blue-100); }
@@ -618,6 +654,7 @@ footer { background: #060d1a; color: #94a3b8; padding: 60px 0 0; }
   .hero-badge-float.b2 { left: 0; }
   .about-layout, .contact-layout { grid-template-columns: 1fr; gap: 40px; }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .tech-grid { grid-template-columns: repeat(3, 1fr); }
   .dispo-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
 }
@@ -640,9 +677,10 @@ footer { background: #060d1a; color: #94a3b8; padding: 60px 0 0; }
   .stat { flex: 0 0 50%; }
   .stat-divider { display: none; }
 
-  .section { padding: 72px 0; }
+  .section { padding: 56px 0; }
   .skills-grid, .services-grid, .projects-grid, .certs-grid, .form-row,
   .about-facts, .dispo-grid, .testimonials-grid { grid-template-columns: 1fr; }
+  .tech-grid { grid-template-columns: repeat(2, 1fr); }
   .avatar-card { flex-direction: column; text-align: center; }
   .footer-inner { grid-template-columns: 1fr; gap: 30px; }
   .contact-form { padding: 24px 20px; }

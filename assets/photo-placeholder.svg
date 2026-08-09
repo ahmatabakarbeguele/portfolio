@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img"
+     aria-label="Emplacement de la photo de profil">
+  <rect width="200" height="200" fill="#0d2149"/>
+  <circle cx="100" cy="78" r="34" fill="#1a4fd6" opacity=".55"/>
+  <path d="M40 178c0-33 27-52 60-52s60 19 60 52z" fill="#1a4fd6" opacity=".55"/>
+</svg>
