@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ahmat Abakar — Administration Sécurité Réseaux & Systèmes</title>
-  <meta name="description" content="Portfolio d'Ahmat Abakar, étudiant à l'ENASTIC (N'Djaména) spécialisé en administration, sécurité des réseaux et des systèmes informatiques." />
+  <title>Ahmat Abakar Beguele — Administration Réseau & Sécurité Système</title>
+  <meta name="description" content="Portfolio d'Ahmat Abakar Beguele, étudiant en Administration Réseau et Sécurité Système à l'ENASTIC (N'Djamena, Tchad). Support informatique, systèmes, réseaux, programmation et infographie." />
+  <meta name="author" content="Ahmat Abakar Beguele" />
+  <meta property="og:title" content="Ahmat Abakar Beguele — Administration Réseau & Sécurité Système" />
+  <meta property="og:description" content="Étudiant à l'ENASTIC, passionné d'infrastructures réseaux, de systèmes et de cybersécurité." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -13,28 +17,29 @@
 <body>
 
 <!--
-  ✏️  PERSONNALISATION RAPIDE
-  Cherche les blocs marqués « [À PERSONNALISER] » pour remplacer :
-  nom complet, téléphone, liens sociaux, projets, expériences et certifications.
+  ✏️  PERSONNALISATION
+  Le contenu de cette page provient du CV d'Ahmat Abakar Beguele.
+  Les blocs marqués « [À COMPLÉTER] » sont ceux à enrichir au fil du temps
+  (nouveaux projets, nouvelles formations, lien LinkedIn).
 -->
 
 <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#accueil" class="brand">
-      <span class="brand-logo">AA</span>
+      <span class="brand-logo">AB</span>
       <span class="brand-name">Ahmat<span class="brand-dot">.</span></span>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#accueil" class="nav-link active">Accueil</a></li>
       <li><a href="#apropos" class="nav-link">À propos</a></li>
       <li><a href="#competences" class="nav-link">Compétences</a></li>
-      <li><a href="#projets" class="nav-link">Projets</a></li>
+      <li><a href="#realisations" class="nav-link">Réalisations</a></li>
       <li><a href="#parcours" class="nav-link">Parcours</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-actions">
-      <a href="cv.pdf" download class="btn-ghost btn-sm" id="cvBtn">↓ CV</a>
+      <a href="cv.pdf" download="CV-Ahmat-Abakar-Beguele.pdf" class="btn-ghost btn-sm" id="cvBtn">↓ CV</a>
       <a href="#contact" class="btn-primary btn-sm">Me contacter</a>
       <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -54,26 +59,24 @@
   <div class="hero-content container">
     <div class="hero-text">
       <span class="hero-status"><span class="dot-pulse"></span> Disponible pour un stage ou une alternance</span>
-      <!-- [À PERSONNALISER] Nom complet -->
-      <h1 class="hero-title">Ahmat<br><em>Abakar</em></h1>
+      <h1 class="hero-title">Ahmat Abakar<br><em>Beguele</em></h1>
       <p class="hero-role">
         <span class="role-static">&gt;</span>
         <span id="typedRole"></span><span class="caret">▌</span>
       </p>
       <p class="hero-desc">
-        Étudiant en informatique à l'<strong>ENASTIC</strong> (N'Djaména, Tchad), spécialisé en
-        <strong>administration et sécurité des réseaux et systèmes</strong>. Je conçois, sécurise et supervise
-        des infrastructures : pare-feu, annuaires, VPN, supervision et durcissement système.
+        Étudiant en <strong>Administration Réseau et Sécurité Système</strong> à l'ENASTIC (N'Djamena, Tchad),
+        passionné par les infrastructures réseaux, les systèmes informatiques, la cybersécurité et les
+        technologies numériques. Fort de deux années d'expérience en support et maintenance informatique.
       </p>
       <div class="hero-cta">
-        <a href="#projets" class="btn-primary btn-lg">Voir mes projets</a>
+        <a href="#realisations" class="btn-primary btn-lg">Voir mon parcours</a>
         <a href="#contact" class="btn-outline btn-lg">Me contacter →</a>
       </div>
       <div class="hero-social">
-        <!-- [À PERSONNALISER] Liens sociaux -->
+        <a href="mailto:ahmatabakarbeguele@gmail.com" class="social-chip">Email</a>
+        <a href="tel:+23568748674" class="social-chip">+235 68 74 86 74</a>
         <a href="https://github.com/AhmatAbakar0858" target="_blank" rel="noopener" class="social-chip">GitHub</a>
-        <a href="#" class="social-chip">LinkedIn</a>
-        <a href="mailto:beguelenangtoudjou@gmail.com" class="social-chip">Email</a>
       </div>
     </div>
 
@@ -87,15 +90,16 @@
           <span class="term-title">ahmat@enastic: ~</span>
         </div>
         <pre class="term-body"><span class="t-prompt">$</span> whoami --profile
-<span class="t-key">nom</span>        : Ahmat Abakar
-<span class="t-key">rôle</span>       : Admin Systèmes &amp; Sécurité Réseau
-<span class="t-key">école</span>      : ENASTIC — N'Djaména, Tchad
-<span class="t-key">focus</span>      : [ firewall, AD, VPN, SIEM, hardening ]
-<span class="t-key">os</span>         : Debian · Ubuntu · Windows Server
+<span class="t-key">nom</span>        : Ahmat Abakar Beguele
+<span class="t-key">filière</span>    : Administration Réseau &amp; Sécurité Système
+<span class="t-key">école</span>      : ENASTIC — N'Djamena, Tchad
+<span class="t-key">depuis</span>     : 2023
+<span class="t-key">systèmes</span>   : Windows · Linux
+<span class="t-key">code</span>       : [ HTML/CSS, Python, C/C++, Dart ]
 <span class="t-key">statut</span>     : <span class="t-ok">ouvert aux opportunités</span>
 
-<span class="t-prompt">$</span> uptime --learning
-<span class="t-com">apprentissage continu : actif depuis 2021</span>
+<span class="t-prompt">$</span> cat interets.txt
+<span class="t-com">réseaux · cybersécurité · veille technologique</span>
 <span class="t-prompt">$</span> <span class="caret">▌</span></pre>
       </div>
       <div class="hero-badge-float b1">🔐 Sécurité</div>
@@ -105,11 +109,11 @@
   </div>
 
   <div class="hero-stats container">
-    <div class="stat"><span class="stat-num" data-target="12">0</span><span class="stat-label">Projets &amp; labs</span></div>
+    <div class="stat"><span class="stat-num" data-target="2">0</span><span class="stat-label">Ans d'expérience pro</span></div>
     <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num" data-target="20">0</span><span class="stat-suffix">+</span><span class="stat-label">Technologies</span></div>
+    <div class="stat"><span class="stat-num" data-target="6">0</span><span class="stat-label">Formations &amp; certificats</span></div>
     <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num" data-target="4">0</span><span class="stat-label">Certifications visées</span></div>
+    <div class="stat"><span class="stat-num" data-target="4">0</span><span class="stat-label">Langages de programmation</span></div>
     <div class="stat-divider"></div>
     <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-label">Langues parlées</span></div>
   </div>
@@ -120,49 +124,52 @@
   <div class="container about-layout">
     <div class="about-text reveal">
       <span class="section-tag">À propos</span>
-      <h2>Sécuriser l'infrastructure,<br>pas seulement l'administrer.</h2>
+      <h2>Des systèmes qui tournent,<br>des utilisateurs bien accompagnés.</h2>
       <p>
-        Passionné d'informatique depuis le lycée, je me suis orienté vers l'<strong>administration des réseaux
-        et des systèmes</strong> parce que c'est là que tout se joue : la disponibilité, l'intégrité et la
-        confidentialité des données d'une organisation reposent sur des choix d'architecture concrets.
+        Je suis étudiant en <strong>Administration Réseau et Sécurité Système</strong> à l'ENASTIC, à
+        N'Djamena. Mon intérêt pour l'informatique est né très tôt et s'est confirmé au contact du terrain :
+        entre 2020 et 2022, j'ai travaillé chez <strong>Altamira Informatique</strong> où j'ai assuré le
+        support aux utilisateurs, la maintenance du matériel, la saisie et la gestion documentaire, ainsi que
+        des travaux d'infographie sous Photoshop.
       </p>
       <p>
-        À l'ENASTIC, je monte régulièrement des laboratoires virtualisés (GNS3, VirtualBox, Proxmox) pour
-        reproduire des environnements d'entreprise : domaine Active Directory, segmentation VLAN, pare-feu
-        pfSense, VPN site-à-site, supervision Zabbix et collecte de logs. J'y teste aussi bien la
-        configuration que les attaques — parce qu'on ne défend bien que ce qu'on sait attaquer.
+        Cette expérience m'a appris l'essentiel du métier : écouter un utilisateur, diagnostiquer calmement,
+        documenter ce qu'on fait. Aujourd'hui, je consolide ces bases avec une formation en administration
+        des systèmes et des réseaux, et je me forme en continu — intelligence artificielle, analyse de
+        données, outils NoCode et développement mobile.
       </p>
       <p>
-        Membre actif du <a href="club/index.html" class="inline-link">club CEENASTIC</a>, je participe à
-        l'entraide entre étudiants, aux hackathons et aux ateliers techniques du campus.
+        Motivé, dynamique et doté d'un bon esprit d'apprentissage, je cherche à mettre mes compétences
+        techniques au service d'une organisation, pour contribuer concrètement au bon fonctionnement et à la
+        sécurité de son système d'information. Je suis aussi membre du
+        <a href="club/index.html" class="inline-link">club CEENASTIC</a> de l'ENASTIC.
       </p>
 
       <div class="about-facts">
-        <!-- [À PERSONNALISER] Informations personnelles -->
-        <div class="fact"><span class="fact-label">Localisation</span><span class="fact-value">N'Djaména, Tchad</span></div>
-        <div class="fact"><span class="fact-label">Formation</span><span class="fact-value">ENASTIC — Informatique</span></div>
-        <div class="fact"><span class="fact-label">Spécialité</span><span class="fact-value">Admin. Sécurité Réseaux &amp; Systèmes</span></div>
-        <div class="fact"><span class="fact-label">Langues</span><span class="fact-value">Français, Arabe, Anglais</span></div>
-        <div class="fact"><span class="fact-label">Mobilité</span><span class="fact-value">Sur site &amp; télétravail</span></div>
+        <div class="fact"><span class="fact-label">Localisation</span><span class="fact-value">N'Djamena, Tchad</span></div>
+        <div class="fact"><span class="fact-label">Formation</span><span class="fact-value">ENASTIC — depuis 2023</span></div>
+        <div class="fact"><span class="fact-label">Spécialité</span><span class="fact-value">Admin. Réseau &amp; Sécurité Système</span></div>
+        <div class="fact"><span class="fact-label">Téléphone</span><span class="fact-value">+235 68 74 86 74</span></div>
+        <div class="fact"><span class="fact-label">Langues</span><span class="fact-value">Français, Arabe tchadien, Anglais</span></div>
         <div class="fact"><span class="fact-label">Disponibilité</span><span class="fact-value">Immédiate</span></div>
       </div>
     </div>
 
     <div class="about-visual reveal">
       <div class="focus-card">
-        <div class="focus-icon">🛡️</div>
-        <h3>Défense en profondeur</h3>
-        <p>Segmentation réseau, filtrage applicatif, moindre privilège et journalisation centralisée.</p>
+        <div class="focus-icon">🛠️</div>
+        <h3>Support &amp; maintenance</h3>
+        <p>Assistance aux utilisateurs, diagnostic et entretien du parc informatique — mon terrain depuis 2020.</p>
       </div>
       <div class="focus-card">
-        <div class="focus-icon">⚙️</div>
-        <h3>Automatisation</h3>
-        <p>Scripts Bash, PowerShell et Python pour l'inventaire, les sauvegardes et le durcissement.</p>
+        <div class="focus-icon">🌐</div>
+        <h3>Réseaux &amp; systèmes</h3>
+        <p>Installation et configuration de postes Windows et Linux, bases de l'administration réseau.</p>
       </div>
       <div class="focus-card">
-        <div class="focus-icon">📊</div>
-        <h3>Supervision</h3>
-        <p>Métriques, alertes et analyse de logs pour détecter avant que l'incident ne devienne panne.</p>
+        <div class="focus-icon">📚</div>
+        <h3>Apprentissage continu</h3>
+        <p>Six formations suivies depuis 2020 : bureautique, infographie, IA, données, NoCode et mobile.</p>
       </div>
     </div>
   </div>
@@ -173,183 +180,162 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-tag">Compétences</span>
-      <h2>Stack technique</h2>
-      <p class="section-desc">Ce que je pratique en laboratoire, en projet académique et en autoformation.</p>
+      <h2>Ce que je sais faire</h2>
+      <p class="section-desc">Compétences acquises en formation à l'ENASTIC, en entreprise et en autoformation.</p>
     </div>
 
     <div class="skills-grid">
       <div class="skill-card reveal">
-        <div class="skill-head"><span class="skill-emoji">🌐</span><h3>Réseaux</h3></div>
-        <div class="skill-bar-row"><span>Routage &amp; commutation (Cisco)</span><span class="skill-pct">85%</span></div>
-        <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
-        <div class="skill-bar-row"><span>VLAN, VPN, NAT, ACL</span><span class="skill-pct">80%</span></div>
-        <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
-        <div class="skill-bar-row"><span>TCP/IP, DNS, DHCP</span><span class="skill-pct">90%</span></div>
-        <div class="skill-track"><div class="skill-fill" data-level="90"></div></div>
-      </div>
-
-      <div class="skill-card reveal">
-        <div class="skill-head"><span class="skill-emoji">🖥️</span><h3>Systèmes</h3></div>
-        <div class="skill-bar-row"><span>Linux (Debian, Ubuntu)</span><span class="skill-pct">85%</span></div>
-        <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
-        <div class="skill-bar-row"><span>Windows Server &amp; Active Directory</span><span class="skill-pct">75%</span></div>
-        <div class="skill-track"><div class="skill-fill" data-level="75"></div></div>
-        <div class="skill-bar-row"><span>Virtualisation (Proxmox, VirtualBox)</span><span class="skill-pct">80%</span></div>
-        <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
-      </div>
-
-      <div class="skill-card reveal">
-        <div class="skill-head"><span class="skill-emoji">🔐</span><h3>Sécurité</h3></div>
-        <div class="skill-bar-row"><span>Pare-feu &amp; durcissement</span><span class="skill-pct">80%</span></div>
-        <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
-        <div class="skill-bar-row"><span>Audit &amp; test d'intrusion</span><span class="skill-pct">70%</span></div>
+        <div class="skill-head"><span class="skill-emoji">🖥️</span><h3>Administration systèmes &amp; réseaux</h3></div>
+        <div class="skill-bar-row"><span>Installation &amp; configuration Windows / Linux</span><span class="skill-pct">70%</span></div>
         <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
-        <div class="skill-bar-row"><span>Supervision &amp; analyse de logs</span><span class="skill-pct">75%</span></div>
+        <div class="skill-bar-row"><span>Maintenance informatique</span><span class="skill-pct">75%</span></div>
         <div class="skill-track"><div class="skill-fill" data-level="75"></div></div>
+        <div class="skill-bar-row"><span>Administration réseau (bases)</span><span class="skill-pct">55%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="55"></div></div>
+        <div class="skill-bar-row"><span>Sécurité informatique (bases)</span><span class="skill-pct">50%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="50"></div></div>
       </div>
 
       <div class="skill-card reveal">
-        <div class="skill-head"><span class="skill-emoji">⌨️</span><h3>Scripting &amp; Dev</h3></div>
-        <div class="skill-bar-row"><span>Bash</span><span class="skill-pct">80%</span></div>
-        <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
-        <div class="skill-bar-row"><span>Python</span><span class="skill-pct">70%</span></div>
+        <div class="skill-head"><span class="skill-emoji">⌨️</span><h3>Programmation &amp; développement</h3></div>
+        <div class="skill-bar-row"><span>HTML / CSS</span><span class="skill-pct">70%</span></div>
         <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
-        <div class="skill-bar-row"><span>PowerShell</span><span class="skill-pct">65%</span></div>
+        <div class="skill-bar-row"><span>Python</span><span class="skill-pct">60%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="60"></div></div>
+        <div class="skill-bar-row"><span>C / C++</span><span class="skill-pct">55%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="55"></div></div>
+        <div class="skill-bar-row"><span>Flutter / Dart (bases)</span><span class="skill-pct">35%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="35"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head"><span class="skill-emoji">📊</span><h3>Données &amp; outils numériques</h3></div>
+        <div class="skill-bar-row"><span>Microsoft Office (Word, Excel, PowerPoint)</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+        <div class="skill-bar-row"><span>Airtable / NoCode</span><span class="skill-pct">65%</span></div>
         <div class="skill-track"><div class="skill-fill" data-level="65"></div></div>
+        <div class="skill-bar-row"><span>Analyse de données (bases)</span><span class="skill-pct">50%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="50"></div></div>
+        <div class="skill-bar-row"><span>Intelligence artificielle (initiation)</span><span class="skill-pct">45%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="45"></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head"><span class="skill-emoji">🎨</span><h3>Infographie &amp; support</h3></div>
+        <div class="skill-bar-row"><span>Adobe Photoshop</span><span class="skill-pct">70%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
+        <div class="skill-bar-row"><span>Support &amp; assistance utilisateurs</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+        <div class="skill-bar-row"><span>Gestion documentaire &amp; saisie</span><span class="skill-pct">85%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
       </div>
     </div>
 
     <div class="tools-block reveal">
       <h3 class="tools-title">Outils &amp; technologies</h3>
       <div class="tools-chips">
-        <span class="chip">pfSense</span><span class="chip">Cisco IOS</span><span class="chip">GNS3</span>
-        <span class="chip">Packet Tracer</span><span class="chip">Wireshark</span><span class="chip">Nmap</span>
-        <span class="chip">Kali Linux</span><span class="chip">Metasploit</span><span class="chip">Burp Suite</span>
-        <span class="chip">Zabbix</span><span class="chip">Nagios</span><span class="chip">Wazuh</span>
-        <span class="chip">Proxmox</span><span class="chip">Docker</span><span class="chip">Active Directory</span>
-        <span class="chip">Apache / Nginx</span><span class="chip">OpenVPN</span><span class="chip">WireGuard</span>
-        <span class="chip">MySQL</span><span class="chip">Git</span><span class="chip">Bash</span><span class="chip">Python</span>
+        <span class="chip">Windows</span><span class="chip">Linux</span><span class="chip">Maintenance PC</span>
+        <span class="chip">Support utilisateurs</span><span class="chip">Réseaux</span><span class="chip">Sécurité</span>
+        <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Python</span>
+        <span class="chip">C</span><span class="chip">C++</span><span class="chip">Flutter</span><span class="chip">Dart</span>
+        <span class="chip">Airtable</span><span class="chip">Word</span><span class="chip">Excel</span>
+        <span class="chip">PowerPoint</span><span class="chip">Photoshop</span><span class="chip">Intelligence artificielle</span>
+      </div>
+    </div>
+
+    <div class="tools-block reveal">
+      <h3 class="tools-title">Qualités personnelles</h3>
+      <div class="tools-chips">
+        <span class="chip">Sérieux et motivé</span><span class="chip">Esprit d'équipe</span>
+        <span class="chip">Sens de l'organisation</span><span class="chip">Capacité d'adaptation</span>
+        <span class="chip">Bonne capacité d'apprentissage</span><span class="chip">Dynamique et à l'écoute</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════ SERVICES ═══════════════════════════ -->
-<section class="section" id="services">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">Expertise</span>
-      <h2>Ce que je peux faire pour vous</h2>
-    </div>
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <span class="service-num">01</span>
-        <h3>Administration d'infrastructure</h3>
-        <p>Installation et configuration de serveurs Linux/Windows, annuaire Active Directory, services DNS,
-           DHCP, partage de fichiers, sauvegardes et politiques de mise à jour.</p>
-      </div>
-      <div class="service-card reveal">
-        <span class="service-num">02</span>
-        <h3>Conception &amp; sécurisation réseau</h3>
-        <p>Plan d'adressage, segmentation VLAN, routage inter-VLAN, règles de pare-feu, VPN site-à-site et
-           nomade, contrôle d'accès Wi-Fi.</p>
-      </div>
-      <div class="service-card reveal">
-        <span class="service-num">03</span>
-        <h3>Audit &amp; durcissement</h3>
-        <p>Scan de vulnérabilités, revue de configuration, application des bonnes pratiques CIS, gestion des
-           comptes et des privilèges, rapport d'audit avec plan de remédiation.</p>
-      </div>
-      <div class="service-card reveal">
-        <span class="service-num">04</span>
-        <h3>Supervision &amp; réponse à incident</h3>
-        <p>Mise en place de la métrologie et des alertes, centralisation des journaux, détection d'anomalies
-           et procédures de réaction aux incidents.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ PROJETS ═══════════════════════════ -->
-<section class="section section-alt" id="projets">
+<!-- ═══════════════════════════ RÉALISATIONS ═══════════════════════════ -->
+<section class="section" id="realisations">
   <div class="container">
     <div class="section-header reveal">
       <span class="section-tag">Réalisations</span>
-      <h2>Projets &amp; laboratoires</h2>
-      <p class="section-desc">Maquettes d'entreprise, projets académiques et travaux personnels.</p>
+      <h2>Expériences &amp; travaux</h2>
+      <p class="section-desc">Missions réalisées en entreprise et compétences mises en pratique en formation.</p>
     </div>
 
     <div class="proj-filters reveal">
-      <button class="filter-btn active" data-filter="all">Tous</button>
-      <button class="filter-btn" data-filter="reseau">Réseau</button>
-      <button class="filter-btn" data-filter="securite">Sécurité</button>
-      <button class="filter-btn" data-filter="systeme">Système</button>
-      <button class="filter-btn" data-filter="dev">Dev &amp; Scripts</button>
+      <button class="filter-btn active" data-filter="all">Tout</button>
+      <button class="filter-btn" data-filter="pro">Expérience pro</button>
+      <button class="filter-btn" data-filter="systeme">Systèmes &amp; support</button>
+      <button class="filter-btn" data-filter="dev">Développement</button>
+      <button class="filter-btn" data-filter="data">Données &amp; IA</button>
+      <button class="filter-btn" data-filter="design">Infographie</button>
     </div>
 
-    <!-- [À PERSONNALISER] Ajoute, retire ou modifie tes projets ici -->
+    <!-- [À COMPLÉTER] Ajoute ici tes nouveaux projets au fur et à mesure -->
     <div class="projects-grid" id="projectsGrid">
-      <article class="project-card reveal" data-cat="reseau securite">
-        <div class="project-top"><span class="project-icon">🏢</span><span class="project-year">2026</span></div>
-        <h3>Maquette réseau d'entreprise sécurisée</h3>
-        <p>Architecture complète sous GNS3 : cœur de réseau redondant, 5 VLAN métiers, routage inter-VLAN,
-           DMZ et pare-feu pfSense avec règles de filtrage documentées.</p>
-        <div class="project-tags"><span>GNS3</span><span>pfSense</span><span>VLAN</span><span>Cisco</span></div>
+      <article class="project-card reveal" data-cat="pro systeme">
+        <div class="project-top"><span class="project-icon">🛠️</span><span class="project-year">2020 – 2022</span></div>
+        <h3>Support utilisateurs &amp; maintenance</h3>
+        <p>Chez Altamira Informatique : assistance aux utilisateurs au quotidien, diagnostic des pannes,
+           maintenance de base du matériel et remise en service des postes.</p>
+        <div class="project-tags"><span>Support</span><span>Maintenance</span><span>Windows</span></div>
+      </article>
+
+      <article class="project-card reveal" data-cat="pro design">
+        <div class="project-top"><span class="project-icon">🎨</span><span class="project-year">2020 – 2022</span></div>
+        <h3>Travaux d'infographie sous Photoshop</h3>
+        <p>Conception et retouche de supports visuels pour les clients de l'entreprise : affiches, visuels
+           imprimés et éléments graphiques.</p>
+        <div class="project-tags"><span>Photoshop</span><span>Design</span><span>Impression</span></div>
+      </article>
+
+      <article class="project-card reveal" data-cat="pro">
+        <div class="project-top"><span class="project-icon">🗂️</span><span class="project-year">2020 – 2022</span></div>
+        <h3>Gestion documentaire &amp; saisie</h3>
+        <p>Traitement et organisation des documents de l'entreprise, saisie informatique et utilisation
+           quotidienne des outils bureautiques.</p>
+        <div class="project-tags"><span>Word</span><span>Excel</span><span>Organisation</span></div>
       </article>
 
       <article class="project-card reveal" data-cat="systeme">
-        <div class="project-top"><span class="project-icon">🗂️</span><span class="project-year">2026</span></div>
-        <h3>Domaine Active Directory multi-sites</h3>
-        <p>Déploiement d'un domaine Windows Server : OU par département, GPO de sécurité, stratégie de mots de
-           passe, partages avec ACL et scripts de connexion PowerShell.</p>
-        <div class="project-tags"><span>Windows Server</span><span>AD DS</span><span>GPO</span><span>PowerShell</span></div>
+        <div class="project-top"><span class="project-icon">💽</span><span class="project-year">Depuis 2023</span></div>
+        <h3>Installation &amp; configuration de systèmes</h3>
+        <p>Travaux pratiques à l'ENASTIC : installation de Windows et de distributions Linux, configuration
+           des postes, comptes utilisateurs et paramètres réseau de base.</p>
+        <div class="project-tags"><span>Windows</span><span>Linux</span><span>Configuration</span></div>
       </article>
 
-      <article class="project-card reveal" data-cat="reseau securite">
-        <div class="project-top"><span class="project-icon">🔗</span><span class="project-year">2025</span></div>
-        <h3>VPN site-à-site &amp; accès nomade</h3>
-        <p>Interconnexion chiffrée de deux sites via IPsec, plus un accès distant OpenVPN/WireGuard avec
-           authentification par certificats et journalisation des connexions.</p>
-        <div class="project-tags"><span>IPsec</span><span>OpenVPN</span><span>WireGuard</span><span>PKI</span></div>
+      <article class="project-card reveal" data-cat="data">
+        <div class="project-top"><span class="project-icon">🤖</span><span class="project-year">2025</span></div>
+        <h3>Initiation à l'intelligence artificielle</h3>
+        <p>Certificat délivré par la Chaire UNESCO Accès TIC : principes de l'IA, cas d'usage et découverte
+           des outils du domaine.</p>
+        <div class="project-tags"><span>IA</span><span>UNESCO</span><span>Certificat</span></div>
       </article>
 
-      <article class="project-card reveal" data-cat="securite">
-        <div class="project-top"><span class="project-icon">🔎</span><span class="project-year">2025</span></div>
-        <h3>Audit de vulnérabilités d'un parc de test</h3>
-        <p>Cartographie réseau avec Nmap, détection de vulnérabilités, exploitation contrôlée en environnement
-           de laboratoire et rapport de remédiation priorisé par criticité.</p>
-        <div class="project-tags"><span>Nmap</span><span>Kali</span><span>Metasploit</span><span>Rapport</span></div>
+      <article class="project-card reveal" data-cat="data">
+        <div class="project-top"><span class="project-icon">📊</span><span class="project-year">2025</span></div>
+        <h3>Analyse de données &amp; NoCode</h3>
+        <p>Formation en analyse de données et prise en main d'Airtable pour structurer, filtrer et exploiter
+           des jeux de données sans écrire de code.</p>
+        <div class="project-tags"><span>Analyse de données</span><span>Airtable</span><span>NoCode</span></div>
       </article>
 
-      <article class="project-card reveal" data-cat="securite systeme">
-        <div class="project-top"><span class="project-icon">📡</span><span class="project-year">2025</span></div>
-        <h3>Supervision &amp; centralisation des logs</h3>
-        <p>Déploiement de Zabbix pour la métrologie et de Wazuh pour la collecte des journaux, avec tableaux de
-           bord et alertes e-mail sur seuils critiques.</p>
-        <div class="project-tags"><span>Zabbix</span><span>Wazuh</span><span>Syslog</span><span>Alerting</span></div>
-      </article>
-
-      <article class="project-card reveal" data-cat="systeme dev">
-        <div class="project-top"><span class="project-icon">🧰</span><span class="project-year">2025</span></div>
-        <h3>Scripts d'automatisation d'administration</h3>
-        <p>Boîte à outils Bash/Python : inventaire des machines, sauvegarde incrémentale chiffrée, contrôle de
-           conformité des serveurs et rapport quotidien automatisé.</p>
-        <div class="project-tags"><span>Bash</span><span>Python</span><span>cron</span><span>rsync</span></div>
-      </article>
-
-      <article class="project-card reveal" data-cat="systeme">
-        <div class="project-top"><span class="project-icon">☁️</span><span class="project-year">2024</span></div>
-        <h3>Serveur de fichiers &amp; sauvegarde</h3>
-        <p>Serveur Samba sur Debian avec quotas, droits par groupe, snapshots et plan de sauvegarde 3-2-1
-           testé par restauration régulière.</p>
-        <div class="project-tags"><span>Debian</span><span>Samba</span><span>rsync</span><span>Backup</span></div>
+      <article class="project-card reveal" data-cat="dev">
+        <div class="project-top"><span class="project-icon">📱</span><span class="project-year">2025</span></div>
+        <h3>Introduction au développement mobile</h3>
+        <p>Découverte de Flutter et du langage Dart : structure d'une application, interfaces et premiers
+           écrans fonctionnels.</p>
+        <div class="project-tags"><span>Flutter</span><span>Dart</span><span>Mobile</span></div>
       </article>
 
       <article class="project-card reveal" data-cat="dev">
         <div class="project-top"><span class="project-icon">🎓</span><span class="project-year">2026</span></div>
         <h3>Plateforme web du club CEENASTIC</h3>
-        <p>Site du club étudiant de l'ENASTIC : partage de ressources, agenda d'événements, forum et offres de
-           stage. Contribution au front-end et au déploiement.</p>
+        <p>Site du club étudiant de l'ENASTIC : partage de ressources, agenda des événements, forum et offres
+           de stage. Réalisé en HTML, CSS et JavaScript.</p>
         <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
         <a href="club/index.html" class="project-link">Voir le site →</a>
       </article>
@@ -358,73 +344,105 @@
 </section>
 
 <!-- ═══════════════════════════ PARCOURS ═══════════════════════════ -->
-<section class="section" id="parcours">
+<section class="section section-alt" id="parcours">
   <div class="container">
     <div class="section-header reveal">
       <span class="section-tag">Parcours</span>
-      <h2>Formation &amp; expériences</h2>
+      <h2>Formation &amp; expérience</h2>
     </div>
 
-    <!-- [À PERSONNALISER] Dates, écoles et expériences -->
     <div class="timeline">
       <div class="tl-item reveal">
         <div class="tl-dot"></div>
-        <span class="tl-date">2024 — aujourd'hui</span>
-        <h3>Licence en Informatique — ENASTIC</h3>
-        <span class="tl-sub">École Nationale Supérieure des Arts et Sciences des TIC · N'Djaména</span>
-        <p>Spécialisation en administration et sécurité des réseaux et systèmes. Travaux pratiques sur
-           l'architecture réseau, les systèmes d'exploitation, les bases de données et la cybersécurité.</p>
+        <span class="tl-date">Depuis 2023</span>
+        <h3>Étudiant à l'ENASTIC</h3>
+        <span class="tl-sub">Administration Réseau et Sécurité Système · N'Djamena</span>
+        <p>Formation aux systèmes d'exploitation, aux réseaux informatiques, à la sécurité des systèmes et
+           à la programmation, avec travaux pratiques en laboratoire.</p>
       </div>
 
       <div class="tl-item reveal">
         <div class="tl-dot"></div>
-        <span class="tl-date">2025</span>
-        <h3>Stage — Support technique &amp; réseau</h3>
-        <span class="tl-sub">Structure d'accueil · N'Djaména</span>
-        <p>Assistance aux utilisateurs, maintenance du parc informatique, configuration de postes et
-           d'équipements réseau, documentation des interventions.</p>
+        <span class="tl-date">2023</span>
+        <h3>Baccalauréat — Série D</h3>
+        <span class="tl-sub">Complexe Scolaire Franco-Anglais Aurore</span>
+        <p>Série scientifique à dominante sciences de la vie et de la terre.</p>
       </div>
 
       <div class="tl-item reveal">
         <div class="tl-dot"></div>
-        <span class="tl-date">2024 — aujourd'hui</span>
-        <h3>Membre actif — Club CEENASTIC</h3>
-        <span class="tl-sub">Club étudiant de l'ENASTIC</span>
-        <p>Participation aux ateliers techniques et hackathons, animation d'entraide entre étudiants et
-           contribution à la plateforme numérique du club.</p>
+        <span class="tl-date">2020 – 2022</span>
+        <h3>Employé informatique — Altamira Informatique</h3>
+        <span class="tl-sub">N'Djamena, Tchad</span>
+        <p>Assistance informatique et support aux utilisateurs · maintenance informatique de base ·
+           utilisation des outils bureautiques · travaux d'infographie avec Photoshop · gestion de documents
+           et saisie informatique.</p>
       </div>
 
       <div class="tl-item reveal">
         <div class="tl-dot"></div>
-        <span class="tl-date">2021 — 2024</span>
-        <h3>Baccalauréat scientifique</h3>
-        <span class="tl-sub">Série D · Tchad</span>
-        <p>Premiers pas en informatique en autodidacte : montage de machines, découverte de Linux et des
-           réseaux domestiques.</p>
+        <span class="tl-date">2020</span>
+        <h3>Brevet d'Enseignement Fondamental (BEF)</h3>
+        <span class="tl-sub">Complexe Scolaire Franco-Anglais Aurore</span>
+        <p>Première formation en informatique bureautique et en infographie la même année.</p>
       </div>
     </div>
 
-    <h3 class="certs-title reveal">Certifications</h3>
+    <h3 class="certs-title reveal">Certifications &amp; formations</h3>
     <div class="certs-grid">
       <div class="cert-card reveal">
-        <div class="cert-logo">CN</div>
-        <div><h4>Cisco CCNA</h4><span class="cert-org">Cisco Networking Academy</span></div>
-        <span class="cert-status progress">En cours</span>
+        <div class="cert-logo">IA</div>
+        <div><h4>Certificat d'Initiation à l'Intelligence Artificielle</h4><span class="cert-org">Chaire UNESCO Accès TIC</span></div>
+        <span class="cert-status done">2025</span>
       </div>
       <div class="cert-card reveal">
-        <div class="cert-logo">S+</div>
-        <div><h4>CompTIA Security+</h4><span class="cert-org">CompTIA</span></div>
-        <span class="cert-status planned">Visée 2026</span>
+        <div class="cert-logo">AD</div>
+        <div><h4>Formation en Analyse de Données</h4><span class="cert-org">Analyse et exploitation de données</span></div>
+        <span class="cert-status done">2025</span>
       </div>
       <div class="cert-card reveal">
-        <div class="cert-logo">LP</div>
-        <div><h4>LPIC-1</h4><span class="cert-org">Linux Professional Institute</span></div>
-        <span class="cert-status planned">Visée 2026</span>
+        <div class="cert-logo">NC</div>
+        <div><h4>Formation NoCode — Airtable</h4><span class="cert-org">Création d'applications sans code</span></div>
+        <span class="cert-status done">2025</span>
       </div>
       <div class="cert-card reveal">
-        <div class="cert-logo">TH</div>
-        <div><h4>Parcours TryHackMe</h4><span class="cert-org">Cyber Defense &amp; Pre-Security</span></div>
-        <span class="cert-status done">Complété</span>
+        <div class="cert-logo">FD</div>
+        <div><h4>Introduction au Développement Mobile</h4><span class="cert-org">Flutter &amp; Dart</span></div>
+        <span class="cert-status done">2025</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">BU</div>
+        <div><h4>Formation en Informatique Bureautique</h4><span class="cert-org">Altamira Informatique</span></div>
+        <span class="cert-status done">2020</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">PS</div>
+        <div><h4>Formation en Infographie</h4><span class="cert-org">Adobe Photoshop</span></div>
+        <span class="cert-status done">2020</span>
+      </div>
+    </div>
+
+    <h3 class="certs-title reveal">Langues</h3>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-logo">FR</div>
+        <div><h4>Français</h4><span class="cert-org">Bon niveau écrit et oral</span></div>
+        <span class="cert-status progress">Bon</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">AR</div>
+        <div><h4>Arabe tchadien</h4><span class="cert-org">Langue de communication quotidienne</span></div>
+        <span class="cert-status done">Courant</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">EN</div>
+        <div><h4>Anglais</h4><span class="cert-org">Compréhension et expression</span></div>
+        <span class="cert-status planned">Intermédiaire</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-logo">★</div>
+        <div><h4>Centres d'intérêt</h4><span class="cert-org">Réseaux, cybersécurité, développement, lecture, veille technologique</span></div>
+        <span class="cert-status progress">Passions</span>
       </div>
     </div>
   </div>
@@ -436,39 +454,41 @@
     <div class="contact-info reveal">
       <span class="section-tag light">Contact</span>
       <h2>Travaillons ensemble</h2>
-      <p>Une opportunité de stage, un projet d'infrastructure à sécuriser ou simplement une question
-         technique ? Écris-moi, je réponds sous 48 heures.</p>
+      <p>Une opportunité de stage, un poste en support ou en administration système, une question ?
+         Écris-moi ou appelle-moi, je réponds rapidement.</p>
 
-      <!-- [À PERSONNALISER] Coordonnées -->
       <ul class="contact-list">
-        <li><span class="ci-icon">✉️</span><div><span class="ci-label">Email</span><a href="mailto:beguelenangtoudjou@gmail.com">beguelenangtoudjou@gmail.com</a></div></li>
-        <li><span class="ci-icon">📍</span><div><span class="ci-label">Localisation</span><span>N'Djaména, Tchad</span></div></li>
+        <li><span class="ci-icon">✉️</span><div><span class="ci-label">Email</span><a href="mailto:ahmatabakarbeguele@gmail.com">ahmatabakarbeguele@gmail.com</a></div></li>
+        <li><span class="ci-icon">📞</span><div><span class="ci-label">Téléphone</span><a href="tel:+23568748674">+235 68 74 86 74</a></div></li>
+        <li><span class="ci-icon">📍</span><div><span class="ci-label">Localisation</span><span>N'Djamena, Tchad</span></div></li>
         <li><span class="ci-icon">💻</span><div><span class="ci-label">GitHub</span><a href="https://github.com/AhmatAbakar0858" target="_blank" rel="noopener">@AhmatAbakar0858</a></div></li>
-        <li><span class="ci-icon">🎓</span><div><span class="ci-label">Club</span><a href="club/index.html">CEENASTIC — ENASTIC</a></div></li>
+        <li><span class="ci-icon">🎓</span><div><span class="ci-label">Club étudiant</span><a href="club/index.html">CEENASTIC — ENASTIC</a></div></li>
       </ul>
+
+      <a href="cv.pdf" download="CV-Ahmat-Abakar-Beguele.pdf" class="btn-outline cv-download">↓ Télécharger mon CV (PDF)</a>
     </div>
 
     <form class="contact-form reveal" id="contactForm" novalidate>
       <div class="form-row">
         <div class="form-group">
           <label for="cfName">Nom</label>
-          <input type="text" id="cfName" name="name" placeholder="Ton nom" required />
+          <input type="text" id="cfName" name="name" placeholder="Votre nom" required />
         </div>
         <div class="form-group">
           <label for="cfEmail">Email</label>
-          <input type="email" id="cfEmail" name="email" placeholder="ton.email@exemple.com" required />
+          <input type="email" id="cfEmail" name="email" placeholder="votre.email@exemple.com" required />
         </div>
       </div>
       <div class="form-group">
         <label for="cfSubject">Sujet</label>
-        <input type="text" id="cfSubject" name="subject" placeholder="Proposition de stage, audit réseau…" required />
+        <input type="text" id="cfSubject" name="subject" placeholder="Proposition de stage, mission…" required />
       </div>
       <div class="form-group">
         <label for="cfMessage">Message</label>
-        <textarea id="cfMessage" name="message" rows="5" placeholder="Décris ton besoin en quelques lignes…" required></textarea>
+        <textarea id="cfMessage" name="message" rows="5" placeholder="Décrivez votre besoin en quelques lignes…" required></textarea>
       </div>
       <button type="submit" class="btn-primary btn-full">Envoyer le message</button>
-      <p class="form-note">Le formulaire ouvre ton application mail avec le message pré-rempli.</p>
+      <p class="form-note">Le formulaire ouvre votre application mail avec le message pré-rempli.</p>
     </form>
   </div>
 </section>
@@ -477,30 +497,30 @@
 <footer>
   <div class="container footer-inner">
     <div class="footer-brand">
-      <a href="#accueil" class="brand"><span class="brand-logo">AA</span><span class="brand-name">Ahmat<span class="brand-dot">.</span></span></a>
-      <p>Administration &amp; sécurité des réseaux et systèmes · N'Djaména, Tchad</p>
+      <a href="#accueil" class="brand"><span class="brand-logo">AB</span><span class="brand-name">Ahmat<span class="brand-dot">.</span></span></a>
+      <p>Ahmat Abakar Beguele — Administration Réseau &amp; Sécurité Système · N'Djamena, Tchad</p>
     </div>
     <div class="footer-links">
       <h4>Navigation</h4>
       <ul>
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
         <li><a href="#parcours">Parcours</a></li>
       </ul>
     </div>
     <div class="footer-links">
-      <h4>Ailleurs</h4>
+      <h4>Contact</h4>
       <ul>
+        <li><a href="mailto:ahmatabakarbeguele@gmail.com">Email</a></li>
+        <li><a href="tel:+23568748674">+235 68 74 86 74</a></li>
         <li><a href="https://github.com/AhmatAbakar0858" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="#">LinkedIn</a></li>
         <li><a href="club/index.html">Club CEENASTIC</a></li>
-        <li><a href="mailto:beguelenangtoudjou@gmail.com">Email</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© <span id="year">2026</span> Ahmat Abakar — Portfolio</p>
+    <p>© <span id="year">2026</span> Ahmat Abakar Beguele — Portfolio</p>
   </div>
 </footer>
 

@@ -3,15 +3,15 @@
    Interactions : navigation, animations, filtres, contact
 ───────────────────────────────────────── */
 
-// [À PERSONNALISER] Adresse de réception du formulaire de contact
-const CONTACT_EMAIL = 'beguelenangtoudjou@gmail.com';
+// Adresse de réception du formulaire de contact
+const CONTACT_EMAIL = 'ahmatabakarbeguele@gmail.com';
 
-// [À PERSONNALISER] Rôles affichés en machine à écrire dans le hero
+// Rôles affichés en machine à écrire dans le hero
 const ROLES = [
-  'Administrateur Systèmes & Réseaux',
-  'Analyste Sécurité (SOC)',
-  'Technicien Infrastructure & Support',
-  'Étudiant en informatique à l\'ENASTIC'
+  'Administration Réseau & Sécurité Système',
+  'Support & maintenance informatique',
+  'Étudiant à l\'ENASTIC — N\'Djamena',
+  'Passionné de réseaux et de cybersécurité'
 ];
 
 /* ── TOAST ── */
