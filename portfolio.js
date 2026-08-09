@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────
-   PORTFOLIO — Ahmat Abakar
+   PORTFOLIO — Ahmat Abakar Beguele
    Interactions : navigation, animations, filtres, contact
 ───────────────────────────────────────── */
 
@@ -8,10 +8,10 @@ const CONTACT_EMAIL = 'ahmatabakarbeguele@gmail.com';
 
 // Rôles affichés en machine à écrire dans le hero
 const ROLES = [
-  'Administration Réseau & Sécurité Système',
-  'Support & maintenance informatique',
-  'Étudiant à l\'ENASTIC — N\'Djamena',
-  'Passionné de réseaux et de cybersécurité'
+  'Sites web rapides et responsives',
+  'HTML · CSS · JavaScript',
+  'Administration réseau & sécurité système',
+  'Basé à N\'Djamena, disponible à distance'
 ];
 
 /* ── TOAST ── */
